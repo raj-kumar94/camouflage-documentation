@@ -1,0 +1,6 @@
+SETUP_TAB_ADVANCE: Advance Setup tab
+FEATURE_INVENTORY_THRESHOLD: Hide/disable variants at certain inventory level (other than 0)
+SETUP_PAGE: Setup page
+FEATURE_COLLECTION_FITER: Filter sold out variants from Collection page results
+FEATURE_GLOBAL_HIDE_RULE_TAB: Apply to variants across all products
+BUTTON_SELECT_VARIANTS: Select Variants
