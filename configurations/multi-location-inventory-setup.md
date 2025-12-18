@@ -1,3 +1,7 @@
+---
+icon: boxes-stacked
+---
+
 # Multi-Location inventory setup
 
 ## Setup Shipping profiles

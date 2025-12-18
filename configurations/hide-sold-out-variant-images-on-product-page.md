@@ -1,4 +1,8 @@
-# 💅 Hide sold out variant images on product page
+---
+icon: image-polaroid
+---
+
+# Hide sold out variant images on product page
 
 {% hint style="info" %}
 Add `window.camouflagePostImageHideFunction` function to your product template liquid file or `theme.liquid` file. Function `camouflagePostImageHideFunction` receives a param that contains hoosObj, mediaObj and availableVariants.\
@@ -8,7 +12,7 @@ Update `imagesCSSSelectors` object for Camouflage to correctly target the slider
 
 ## Pre-configured function for some of the themes:
 
-### Vision theme
+### Vision theme (Latest method)
 
 ```js
 // Vision (2.8.1) theme
@@ -174,21 +178,10 @@ window.camouflagePostImageHideFunction = ({ hoosObj, mediaObj, availableVariants
 
 ```javascript
 window.camouflagePostImageHideFunction = ({ hoosObj, mediaObj, availableVariants }) => {
-  const product = hoosObj.product;
-  const productVariantSelector = document.querySelectorAll('.product__info-wrapper variant-selects fieldset');
-  if (productVariantSelector.length === 1 && hoosObj.product.options.length === 1) {
-    const inputs = productVariantSelector[0].querySelectorAll('input');
-    if (inputs.length === product.variants.length) {
-      inputs.forEach(input => {
-        const value = input.value;
-        const isMarkedUnavailable = product.variants.find(variant => variant.options[0] === value)?.marked_unavailable;
-        if (isMarkedUnavailable) {
-          input.nextElementSibling.classList.add('camouflage-marked-unavailable');
-        }
-      })
-    }
-  }
-
+  // don't run if not in debug mode
+  // if (!window.location.href.includes('test=camouflage')) {
+  //   return;
+  // }
   const mediaContainer = document.querySelector('media-gallery, .product-single__gallery') || document.body;
   for (let mediaId in mediaObj) {
     if (mediaObj[mediaId].soldout) {

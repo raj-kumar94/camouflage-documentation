@@ -39,7 +39,7 @@
 
 * [🎁 Product Page](configurations/product-page.md)
 * [⚡ Quick View](configurations/quick-view.md)
-* [💅 Hide sold out variant images on product page](configurations/hide-sold-out-variant-images-on-product-page.md)
+* [Hide sold out variant images on product page](configurations/hide-sold-out-variant-images-on-product-page.md)
 * [🎛️ Product Grid - Collection page swatches](configurations/product-grid-collection-page-swatches.md)
 * [🪶 Featured Product - Variant picker on any page](configurations/featured-product-variant-picker-on-any-page.md)
 * [🔍 Availability filter on collection pages](configurations/availability-filter-on-collection-pages.md)

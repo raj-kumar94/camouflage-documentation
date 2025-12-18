@@ -1,5 +1,7 @@
 # FAQs
 
+
+
 <details>
 
 <summary>How to find the theme name?</summary>
@@ -20,7 +22,7 @@ Navigate to Shopify admin -> Themes -> Click on Customise button -> Click on App
 
 <figure><img src=".gitbook/assets/activate-camouflage.webp" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://camouflage-hoos.s3.ap-south-1.amazonaws.com/enable+camouflage+in+app+embeds.mp4" alt=""><figcaption></figcaption></figure>
+<div data-with-frame="true"><figure><img src="https://camouflage-hoos.s3.ap-south-1.amazonaws.com/enable+camouflage+in+app+embeds.mp4" alt="" width="563"><figcaption></figcaption></figure></div>
 
 </details>
 
