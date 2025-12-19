@@ -27,11 +27,11 @@ window.hide_oos_extras = {
 
 `hide_oos_extras` contains options to manipulate Camouflage's behaviour on the variant picker
 
-`hide_oos_query_selectors.selector_type` - It is the HTML tag's nodename in lowercase. Eg: `span`, `div` etc. In case of `input`, use `radio` instead
+`hide_oos_query_selectors.selector_type` - The nodename of the HTML tag which contains the product options (The HTML tag of the product options container) Eg: `span`, `div` etc. In case of `input`, use `radio` instead. Note : Some themes use custom tags to make the product options containers such as `custom-select`.
 
-`hide_oos_query_selectors.input_selector` - HTML tag in lowercase that holds the variant option value
+`hide_oos_query_selectors.input_selector` - HTML tag in lowercase that holds the product option value. In case of selector/dropdown, the product option value is found in the option itself, in case of swatches, it might be found in some adjacent/parent label or `input` tag.&#x20;
 
-`hide_oos_query_selectors.field_selector` - CSS selector where the wrapper of each product options can identified
+`hide_oos_query_selectors.field_selector` - It is the CSS selector of the element which wraps a product options container.&#x20;
 
 `hide_oos_query_selectors.mainContainer` - CSS selector that uniquely identifies the variant picker for the given product.
 
