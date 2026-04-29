@@ -164,3 +164,51 @@ document.addEventListener('hoos:script2loaded', () => {
 
 
 
+### Rubik Swatches
+
+```json
+{
+  "hide_oos_query_selectors": {
+    "selector_type": "radio",
+    "input_selector": "radio",
+    "field_selector": "fieldset.rubik-swatch__option",
+    "mainContainer": "rubik-swatch"
+  },
+  "hide_oos_extras": {
+    "disabled": false,
+    "target_parent_element": true,
+    "target_parent2_element": false,
+    "observer_selector": ".rubik-swatch",
+    "render_global_hide_script": "yes"
+  }
+}
+```
+
+PDP Config
+
+```javascript
+window.getCamouflageProduct = (product, hoosObj) => {
+  hoosObj.mainContainer = document.querySelector('rubik-swatch')?.shadowRoot.querySelector('.rubik-swatch');
+
+  if (hoosObj.product.options_with_values) {
+      const options_with_values_flat_keys = {};
+      product.options_with_values.map(o => o.values).flat().forEach(item => {
+          options_with_values_flat_keys[item.id] = item;
+      });
+      product.options_with_values_flat_keys = options_with_values_flat_keys;
+  }
+  return product;
+}
+
+
+document.addEventListener('hoos:executed', (event) => {
+    setTimeout(() => {
+        const mainContainer = event.detail.mainContainer;
+        const style = document.getElementById('camouflage-custom-css-pdp');
+        if (style) {
+            // add the style before the mainContainer
+            mainContainer.parentNode.insertBefore(style, mainContainer);
+        }
+    }, 200);
+});
+```
