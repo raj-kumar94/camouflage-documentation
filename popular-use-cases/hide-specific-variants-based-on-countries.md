@@ -4,7 +4,7 @@ In this example, we'll hide some variants based on countries
 
 ### Before you select and hide any variants
 
-1. Make sure the theme setup is done correctly. Refer to [Step 1](../../camouflage-setup-guide/basic-configuration.md)
+1. Make sure the theme setup is done correctly. Refer to [Step 1](../camouflage-setup-guide/basic-configuration.md)
 2. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
 3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only spefically selected variants` at the top of the page.
 
@@ -14,16 +14,16 @@ In this example, we'll hide some variants based on countries
 
 1. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
 2. Search for a product
-3. Click on **"**\{{space.vars.BUTTON\_SELECT\_VARIANTS\}}**"** button
+3. Click on the <code class="expression">space.vars.BUTTON_SELECT_VARIANTS</code> button
 4.  Select variants to hide and click "Hide from countries"<br>
 
-    <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 5.  Select the countries where you want the selected variants hidden and click the "Hide from countries" button.<br>
 
-    <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 6.  If you want to Hide from all countries except a few, then leave the `Hide selected variants from these countries` field empty and add countries in the `But not from these countries` field instead<br>
 
-    <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 ###
 

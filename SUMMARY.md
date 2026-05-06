@@ -15,8 +15,8 @@
 
 ## POPULAR USE CASES
 
-* [Hide specific variants regardless of inventory quantity](popular-use-cases/hide-specific-variants-regardless-of-inventory-quantity/README.md)
-  * [Hide specific variants based on countries](popular-use-cases/hide-specific-variants-regardless-of-inventory-quantity/hide-specific-variants-based-on-countries.md)
+* [Hide specific variants regardless of inventory quantity](popular-use-cases/hide-specific-variants-regardless-of-inventory-quantity.md)
+* [Hide specific variants based on countries](popular-use-cases/hide-specific-variants-based-on-countries.md)
 * [Hide specific variants using metafields](popular-use-cases/hide-specific-variants-using-metafields.md)
 * [Hide variants in bulk regardless of inventory quantity](popular-use-cases/hide-variants-in-bulk-regardless-of-inventory-quantity.md)
 * [Hide variants based on inventory level](popular-use-cases/hide-variants-based-on-inventory-level.md)

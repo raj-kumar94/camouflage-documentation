@@ -22,8 +22,6 @@ The direct link to activate Camouflage can be found in the [step 2](https://camo
 
 <figure><img src=".gitbook/assets/activate-camouflage.webp" alt=""><figcaption></figcaption></figure>
 
-{% embed url="https://camouflage-hoos.s3.ap-south-1.amazonaws.com/enable+camouflage+in+app+embeds.mp4" %}
-
 </details>
 
 <details>
@@ -44,11 +42,7 @@ Most probably you're looking at a product that has 2 or 3 product options/dropdo
 
 **Examples of product having 1 product option (Size options):**
 
-![Product with 1 option](.gitbook/assets/product-1-option.png)
-
 **Examples of product having 2 product options (Size and Width options):**
-
-![Product with 2 options](.gitbook/assets/product-2-options.png)
 
 </details>
 
@@ -60,11 +54,7 @@ To understand it with example, product options are Size/Color/Material etc. Vari
 
 **Examples of product having 1 product option (Size options):**
 
-![Product with 1 option](.gitbook/assets/product-1-option.png)
-
 **Examples of product having 2 product options (Size and Width options):**
-
-![Product with 2 options](.gitbook/assets/product-2-options.png)
 
 </details>
 
