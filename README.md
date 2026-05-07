@@ -1,12 +1,14 @@
 # 👋 Welcome to Camouflage: Hide sold out variants
 
-Camouflage is a go-to solution to hide the variants that you don't want to display on your website.
+Camouflage is your ultimate tool to hide or display variants based on various conditions and helping you create a smarter, and cleaner storefront.
 
-The reason to hide them could be anything including&#x20;
+Here are some popular use cases for hiding variants or displaying selective variants:
 
-* You don't want your customers to see what's not available
-* You don't want your customers to go through a huge list of sold out items
-* You are yet to configure variants before launching and you don't want to set the product in Draft etc etc.
+* **Seasonal Products** – Hide winter colors in summer (and vice versa).<br>
+* **Location-based Visibility** – Show only the variants available in specific countries.<br>
+* **Customer Segmentation** – Offer exclusive variants to VIPs or tagged customers.<br>
+* **Limited Editions** – You are yet to configure variants before launching, so “coming soon” or “restocking” variants remain hidden until you’re ready.<br>
+* **Clean Storefronts** – Hide options that are sold out or unavailable to avoid clutter.
 
 ## Setup Guide
 
@@ -26,8 +28,8 @@ The reason to hide them could be anything including&#x20;
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="/broken/pages/9Z1DhbHn5EPuuIYWd30n" %}
-[Broken link](/broken/pages/9Z1DhbHn5EPuuIYWd30n)
+{% content-ref url="/broken/pages/LTYPQUKJkqWG5Xav47LB" %}
+[Broken link](/broken/pages/LTYPQUKJkqWG5Xav47LB)
 {% endcontent-ref %}
 
 {% content-ref url="faqs.md" %}

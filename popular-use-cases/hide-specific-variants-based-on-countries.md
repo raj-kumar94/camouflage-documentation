@@ -1,6 +1,6 @@
 # Hide specific variants based on countries
 
-In this example, we'll hide some variants based on countries
+
 
 ### Before you select and hide any variants
 
