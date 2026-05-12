@@ -47,3 +47,4 @@
 * [♾️ Additional code configurations](configurations/additional-code-configurations.md)
 * [Theme edits/configurations for additional features](configurations/theme-edits-configurations-for-additional-features.md)
 * [Multi-Location inventory setup](configurations/multi-location-inventory-setup.md)
+* [Handling Variant Picker in Shadow Root (Rubik-Swatch)](configurations/handling-variant-picker-in-shadow-root-rubik-swatch.md)
