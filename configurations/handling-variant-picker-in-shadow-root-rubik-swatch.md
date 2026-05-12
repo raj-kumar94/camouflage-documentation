@@ -5,7 +5,7 @@ description: >-
   an example of handling such shadow roots.
 ---
 
-# Handling Variant Picker in Shadow Root (Rubik-Swatch)
+# 🌒 Handling Variant Picker in Shadow Root (Rubik-Swatch)
 
 PDP Config:
 
