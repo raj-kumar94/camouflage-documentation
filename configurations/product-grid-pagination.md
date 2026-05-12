@@ -3,11 +3,12 @@ description: >-
   Mutation observer code for relaunching startCamouflageProductGrid() function
   to hide sold out variant swatches from product cards dynamically inserted on
   the product grid via pagination.
+icon: grid
 ---
 
 # Product Grid Pagination
 
-
+Use the following in the **Global Custom JS**:
 
 ```
 // ********* RESTARTING PRODUCT GRID ON PAGINATION ***********
