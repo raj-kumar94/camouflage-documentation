@@ -4,7 +4,7 @@ description: >-
   page.
 ---
 
-# 3️ ADVANCED SETUP (optional)
+# 3️ Step 3: Advanced Setup (optional)
 
 {% hint style="info" %}
 Go to the Setup page -> Advance Setup tab to view the settings
@@ -30,10 +30,10 @@ Eg: If you add the tag `new-arrivals` , Camouflage will work only on the product
 
 ## Hide variants based on inventory level
 
-Hide/disable/strike-through variants based on inventory. \
+Hide/disable/strike-through variants based on inventory.\
 Eg: The below example will hide variants if the variant inventory level is 2 or below
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ## Hide variants if image is not attached to the variant
 
@@ -46,4 +46,3 @@ Eg: The below example will hide variants if the variant inventory level is 2 or 
 ## More conditions to hide variants
 
 If you have any specific needs to hide variants based on complex logic, contact us at <mark style="color:blue;">raj@codecrux.dev</mark>
-
