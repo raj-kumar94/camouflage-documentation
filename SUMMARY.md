@@ -19,6 +19,9 @@
 
 * [Hide specific variants regardless of inventory quantity](popular-use-cases/hide-specific-variants-regardless-of-inventory-quantity.md)
 * [Hide specific variants based on countries](popular-use-cases/hide-specific-variants-based-on-countries.md)
+* [Schedule hide variants for launches & sales](popular-use-cases/schedule-hide-variants-for-launches-and-sales.md)
+* [Show variants only to VIP / B2B / wholesale customers](popular-use-cases/show-variants-only-to-vip-or-b2b-customers.md)
+* [Hide variants from B2B / wholesale customers](popular-use-cases/hide-variants-from-b2b-or-wholesale-customers.md)
 * [Hide specific variants using metafields](popular-use-cases/hide-specific-variants-using-metafields.md)
 * [Hide variants in bulk regardless of inventory quantity](popular-use-cases/hide-variants-in-bulk-regardless-of-inventory-quantity.md)
 * [Hide variants based on inventory level](popular-use-cases/hide-variants-based-on-inventory-level.md)
