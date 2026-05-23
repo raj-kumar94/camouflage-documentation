@@ -26,16 +26,24 @@ Here are some popular use cases for hiding variants or displaying selective vari
 
 ## Quick Links
 
-We've put together some helpful guides for you to get setup with our product quickly and easily.
+We've put together some helpful guides for you to get set up with our product quickly and easily.
 
-{% content-ref url="/broken/pages/LTYPQUKJkqWG5Xav47LB" %}
-[Broken link](/broken/pages/LTYPQUKJkqWG5Xav47LB)
+{% content-ref url="overview/what-we-do.md" %}
+[what-we-do.md](overview/what-we-do.md)
+{% endcontent-ref %}
+
+{% content-ref url="overview/our-features.md" %}
+[our-features.md](overview/our-features.md)
 {% endcontent-ref %}
 
 {% content-ref url="faqs.md" %}
 [faqs.md](faqs.md)
 {% endcontent-ref %}
 
-{% content-ref url="/broken/pages/BBrisppHvTKwV4dVx6ni" %}
-[Broken link](/broken/pages/BBrisppHvTKwV4dVx6ni)
+{% content-ref url="troubleshooting.md" %}
+[troubleshooting.md](troubleshooting.md)
 {% endcontent-ref %}
+
+## Still need help?
+
+Most setup questions are covered in [FAQs](faqs.md) and [Troubleshooting](troubleshooting.md). If you're still stuck, open the in-app chat from the Camouflage dashboard, or email us at [raj@codecrux.dev](mailto:raj@codecrux.dev) and we'll get you sorted.

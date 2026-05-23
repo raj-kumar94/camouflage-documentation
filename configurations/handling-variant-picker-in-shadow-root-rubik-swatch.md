@@ -9,7 +9,7 @@ description: >-
 
 PDP Config:
 
-```
+```javascript
 {
   "hide_oos_query_selectors": {
   "selector_type": "radio",
@@ -27,7 +27,7 @@ PDP Config:
 
 Custom JS PDP :&#x20;
 
-```
+```javascript
 // *********** CUSTOM CODE TO HANDLE SHADOW ROOT ************ //
 
 window.getCamouflageProduct = (product, hoosObj) => {

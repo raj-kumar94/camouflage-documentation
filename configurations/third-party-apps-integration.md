@@ -1,5 +1,9 @@
 # ➕ Third party apps integration
 
+{% hint style="info" %}
+**For merchants:** if you're using a third-party variant-picker or swatch app, you usually don't need to add any code. Just go to the Camouflage app → **Setup** → pick the app from the **"Third party app integrations"** dropdown and Save. The snippets on this page are for developers handling apps that aren't yet on the dropdown — [open the in-app chat](../troubleshooting.md) and we'll usually have you sorted within a day.
+{% endhint %}
+
 ### Multi-location inventory
 
 

@@ -1,6 +1,13 @@
 # Hide variants in bulk regardless of inventory quantity
 
-You can set a rule to hide multiple variants across different products at once. You can also limit the variants to be hidden based on product tags or product types. Even you can set conditions like if a customer is tagged with "B2B" and is browsing from "United States", hide specified variants etc.
+Set a single rule that hides matching variants across **many products at once** — handy when you need to pull a size, colour, or SKU pattern site-wide, e.g. "hide every XS size during a manufacturing delay" or "hide all Navy Blue items from B2B customers in the US."
+
+You can layer extra conditions on each rule:
+
+* Limit to products with specific **tags** (e.g. `seasonal-summer`).
+* Limit to products of a specific **type** (e.g. "Sweatshirts").
+* Show or hide only for tagged **customers** (e.g. B2B / VIP).
+* Restrict to specific **countries**.
 
 
 
@@ -8,13 +15,13 @@ You can set a rule to hide multiple variants across different products at once. 
 
 1. Make sure the theme setup is done correctly. Refer to [Step 1](../camouflage-setup-guide/basic-configuration.md)
 2. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
-3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only spefically selected variants` at the top of the page.
+3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only specifically selected variants` at the top of the page.
 
 
 
 ### Let's hide a specific variant
 
-1. Go to the Camouflage app -> `Hide specific variants` page -> <code class="expression">space.vars.FEATURE_GLOBAL_HIDE_RULE_TAB</code> tab
+1. Go to the Camouflage app -> `Hide specific variants` page -> `Global hide rules` tab
 2.  Click +Add Rule button<br>
 
     <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
@@ -41,3 +48,7 @@ You can set a rule to hide multiple variants across different products at once. 
 ### Make the hidden variants visible again
 
 Just delete the rule and click "Save Rules" button.
+
+***
+
+**Need help?** If a rule isn't behaving the way you expect, see [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

@@ -11,7 +11,7 @@ Camouflage cannot implement its hiding / striking-through functionality without 
 \
 (Both will be used in **custom js PDP**)
 
-```
+```javascript
 // 1. Use the definition provided on the window: 
 document.addEventListener('hoos:executed', (event) => {
   const containerToObserve = event.detail.mainContainer; //event.detail.mainContainer.closest('.product-form--block');
@@ -19,7 +19,7 @@ document.addEventListener('hoos:executed', (event) => {
 })
 ```
 
-```
+```javascript
 // 2. If you want more control on the logic: 
 const observeContainerForRestoringAttributes = (hoosObj) => {
   // debugger;

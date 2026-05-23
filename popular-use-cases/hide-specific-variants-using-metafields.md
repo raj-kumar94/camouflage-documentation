@@ -8,7 +8,7 @@ You can set a metafield on variants for Camouflage to hide them on your website.
 
 1. Make sure the theme setup is done correctly. Refer to [Step 1](../camouflage-setup-guide/basic-configuration.md)
 2. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
-3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only spefically selected variants` at the top of the page.
+3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only specifically selected variants` at the top of the page.
 
 
 
@@ -45,4 +45,23 @@ Scroll to the bottom of the metafields section. You should see the "Always hide"
 
 ### Third party apps to manage metafield in bulk
 
-Manually setting each variant's metafield in Shopify admin can be a lot of work. You can intead use a third party app or APIs to manage metafields in bulk for multiple variants. Remember, the namespace of the metafield to use is `camouflage_custom` and the key is `always_hide`
+Manually setting each variant's metafield in Shopify admin can be a lot of work. You can instead use a third-party app or Shopify's Bulk Editor / API to manage metafields for many variants at once. Remember the metafield namespace + key:
+
+* **Namespace**: `camouflage_custom`
+* **Key**: `always_hide`
+* **Type**: Boolean (set to `True` to hide the variant)
+
+Popular bulk-editing apps that work with this:
+
+* **Matrixify (Excelify)** — import a CSV with one row per variant and the metafield column filled in
+* **Bulk Editor in Shopify admin** — Products → select variants → "Edit products" → add the metafield column
+* **Shopify's Admin API** — for engineering teams managing variant data programmatically
+
+***
+
+### Related
+
+* Want to hide variants without leaving the Camouflage app? See [Hide specific variants regardless of inventory quantity](hide-specific-variants-regardless-of-inventory-quantity.md).
+* Need a single rule that applies to many products at once? See [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md).
+
+**Need help?** Hit a snag? Read [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

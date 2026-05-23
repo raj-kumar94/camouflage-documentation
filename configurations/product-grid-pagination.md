@@ -10,7 +10,7 @@ icon: grid
 
 Use the following in the **Global Custom JS**:
 
-```
+```javascript
 // ********* RESTARTING PRODUCT GRID ON PAGINATION ***********
 document.addEventListener('hoos:grid_executed', () => {
   const gridCSSSelector = <cssSelector for the immediate container of the product cards>;

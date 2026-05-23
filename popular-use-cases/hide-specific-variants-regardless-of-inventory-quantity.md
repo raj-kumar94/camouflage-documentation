@@ -11,7 +11,7 @@ description: 'The example below will help you in understanding how to use this f
 
 1. Make sure the theme setup is done correctly. Refer to [Step 1](../camouflage-setup-guide/basic-configuration.md)
 2. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
-3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only spefically selected variants` at the top of the page.
+3. If you want to hide only the specifically selected variants, tick the checkbox `Hide only specifically selected variants` at the top of the page.
 
 
 
@@ -38,3 +38,12 @@ description: 'The example below will help you in understanding how to use this f
 6. Click **"Undo always hide"**
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Related
+
+* Need to hide **lots** of variants at once with a rule? See [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md).
+* Want to manage the "always hide" flag via Shopify metafields instead of the app UI? See [Hide specific variants using metafields](hide-specific-variants-using-metafields.md).
+
+**Need help?** If the variant isn't being hidden, head to [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

@@ -1,12 +1,29 @@
 # FAQs
 
+{% hint style="info" %}
+Looking for a setup walkthrough? Start with the [Setup Guide](camouflage-setup-guide/basic-configuration.md). Working through a specific issue? See [Troubleshooting](troubleshooting.md).
+{% endhint %}
+
+**Jump to a section:**
+
+* [🚀 Getting started](#getting-started)
+* [🧩 Variants & options](#variants-and-options)
+* [🔧 Something's not working](#something-s-not-working)
+* [📌 Quick views, featured products & multiple themes](#quick-views-featured-products-and-multiple-themes)
+* [🔒 Privacy, performance & SEO](#privacy-performance-and-seo)
+* [🛑 Turning off or removing Camouflage](#turning-off-or-removing-camouflage)
+
+***
+
+## 🚀 Getting started <a href="#getting-started" id="getting-started"></a>
+
 <details>
 
-<summary>How to find the theme name?</summary>
+<summary>How do I find my theme name?</summary>
 
-Go to Shopify Admin -> Sales Channels -> Online Store -> Themes
+Go to **Shopify admin → Online Store → Themes**.
 
-You can find the theme name just below the Last saved information. Refer to the following screenshot:
+You can find the theme name just below the "Last saved" information. Refer to the following screenshot:
 
 <img src=".gitbook/assets/find-theme-name (1).webp" alt="" data-size="original">
 
@@ -14,109 +31,134 @@ You can find the theme name just below the Last saved information. Refer to the 
 
 <details>
 
-<summary>How to enable the app?</summary>
+<summary>How do I enable the app on my theme?</summary>
 
-Navigate to Shopify admin -> Themes -> Click on Customise button -> Click on App embeds Icon at the left sidebar -> Click on the switch button next to **Camouflage sold variants** and Save
+Navigate to **Shopify admin → Themes → Customise → App embeds icon (left sidebar) → Camouflage sold variants → toggle on → Save**.
 
-The direct link to activate Camouflage can be found in the [step 2](https://camouflage.codecrux.dev/) of the Setup page. If it still doesn't work for you, please reach out to us via chat or email.
+You can also use the **"Enable Camouflage"** button on the [Setup page](https://camouflage.codecrux.dev/) (Step 2) — it takes you directly into the theme customiser with the Camouflage embed pre-selected. If that doesn't work, follow the manual steps above or reach out via chat / email.
 
 <figure><img src=".gitbook/assets/activate-camouflage.webp" alt=""><figcaption></figcaption></figure>
 
-</details>
-
-<details>
-
-<summary>I want to test Camouflage in a non-live (draft) theme. Is it possible?</summary>
-
-Yes, you can test Camouflage in a non-live (draft) theme.
-
-Just navigate to Shopify admin -> Themes -> Click on Customise button of the draft theme -> Click on App embeds Icon at the left sidebar -> Click on the switch button next to **Camouflage sold variants** and Save.
+For the full walkthrough, see [Step 2: Activate Camouflage in the theme](camouflage-setup-guide/activate-camouflage.md).
 
 </details>
 
 <details>
 
-<summary>The app works in the preview link and theme editor but does not work in the online store.</summary>
+<summary>Can I test Camouflage in a draft theme before going live?</summary>
 
-Most probably you're looking at a product that has 2 or 3 product options/dropdowns (eg: Color, Size and Material options). You are just one step away from making it work in the online store as well by upgrading (14 days trial before you pay).
+Yes. Camouflage works in draft themes — duplicate your live theme, enable the Camouflage embed on the copy, and preview it.
 
-**Examples of product having 1 product option (Size options):**
-
-**Examples of product having 2 product options (Size and Width options):**
+Step-by-step (with screenshots): [Testing in a draft theme](camouflage-setup-guide/testing-in-a-draft-theme.md).
 
 </details>
 
 <details>
 
-<summary>What is the product with '1 option' or '2 options'? Is it different from variants?</summary>
+<summary>I want help setting it up. Can you do it for us?</summary>
 
-To understand it with example, product options are Size/Color/Material etc. Variant are the combination of product options. eg: Small/Red, Medium/Red, Medium/Blue etc.
+Yes. If you're on a paid plan, our support team will set Camouflage up for your theme — including third-party integrations and custom selectors. Just open the in-app chat from your Camouflage dashboard and share your store URL.
 
-**Examples of product having 1 product option (Size options):**
+We typically respond within a few hours and most setups finish in less than a day.
 
-**Examples of product having 2 product options (Size and Width options):**
+</details>
+
+***
+
+## 🧩 Variants & options <a href="#variants-and-options" id="variants-and-options"></a>
+
+<details>
+
+<summary>What's the difference between an "option" and a "variant"?</summary>
+
+They're related but different.
+
+* **Options** are the *types* of choices on a product: Size, Color, Material, etc. A t-shirt that comes in different sizes only has **1 option**. A t-shirt with Size *and* Color has **2 options**.
+* **Variants** are the actual combinations. The 2-option t-shirt with Sizes (S, M, L) and Colors (Red, Blue) has 6 variants: S/Red, S/Blue, M/Red, M/Blue, L/Red, L/Blue.
+
+Camouflage works on single-option products on every plan. Multi-option products (2 or 3 options) need the upgraded plan — there's a 14-day free trial.
 
 </details>
 
 <details>
 
-<summary>What is the difference between "Sold out" and "Unavailable" variants?</summary>
+<summary>What's the difference between "Sold out" and "Unavailable" variants?</summary>
 
-**Sold out variant:** When a variant exists in the Shopify admin but there is no inventory to sell, the variant is Sold out.
+**Sold out** — the variant **exists in your Shopify admin** (you set it up with a price, SKU, etc.) but has zero inventory right now. Usually comes back when you restock.
 
-**Unavailable variant:** If the variant doesn't exist in Shopify admin, it is called Unavailable variant. It happens only when the product has 2 or more options. Eg: Size and Color options.
+**Unavailable** — the variant **doesn't exist in your Shopify admin**, but the picker still offers the combination because other combos do exist. Only happens on multi-option products.
 
-**Example:** If you have a Red/XL variant, it might be in-stock or out-of-stock. But if Red/XXL variant doesn't exist but the product has XXL size in other colors, Red/XXL will be called Unavailable variant.
+**Example:** If you have a Red/XL variant, it might be in-stock or sold out. But if Red/XXL doesn't exist yet your product has XXL in other colours, the picker will show Red/XXL as a clickable option — that's an "Unavailable" variant.
 
-</details>
-
-<details>
-
-<summary>How to hide specific variants of a product?</summary>
-
-After the basic setup is done on the setup page, Go to the [Hide specific variants](https://camouflage.codecrux.dev/hide-specific-variants?tab=individual) page. Then search for the product and click on **Select Variants** button. Select variants to hide and then click on **Always hide**.
-
-To unhide the variants, select those variants, click on the 3 dots near the action buttons and then click on **Undo always hide**.
+See: [Hide Unavailable variants but not sold-out variants](popular-use-cases/hide-unavailable-variants-but-not-sold-out-variants.md).
 
 </details>
 
 <details>
 
-<summary>How to filter sold out variants from Collection page results?</summary>
+<summary>How do I hide specific variants of a product?</summary>
 
-**Step 1:** Add the Availability filter from Shopify's Search & Discovery app.
+After the basic setup is done on the Setup page, go to the [Hide specific variants](https://camouflage.codecrux.dev/hide-specific-variants?tab=individual) page. Search for the product, click **Select Variants**, pick the variants you want hidden, and click **Always hide**.
 
-**Step 2:** Follow the instructions in the [Advance setup tab](https://camouflage.codecrux.dev/?step=3)
+To unhide: select those variants, click the 3 dots near the action buttons, then click **Undo always hide**.
 
-[Checkout the result](https://camouflage-demo.myshopify.com/collections/all?filter.v.availability=1) (password: camouflage)
-
-</details>
-
-<details>
-
-<summary>My theme is listed in the supported themes list, but it is still not working for me.</summary>
-
-This can happen if you have modified the variant selectors in your product page or have integrated any third party app that changes variant selectors. You can still reach out to us so that we can have a look at your current product page structure and make Camouflage work.
+Full walkthrough: [Hide specific variants regardless of inventory quantity](popular-use-cases/hide-specific-variants-regardless-of-inventory-quantity.md).
 
 </details>
 
 <details>
 
-<summary>Does the app work in a product QuickView?</summary>
+<summary>How does the "hide specific variants" feature work behind the scenes?</summary>
 
-If you are using a Shopify free 2.0 theme, yes! Go to the Setup page -> Advance Setup tab and tick the checkbox **"Enable Camouflage in the quick view"**.
+Camouflage marks the variant as sold-out for the storefront — it doesn't delete or modify the variant in Shopify. The variant still exists in your admin; it just doesn't appear in the picker for shoppers.
 
-If it doesn't work out of the box or if you've any other theme, check [this guide](https://codecrux-dev.gitbook.io/camouflage-api-doc/camouflage-setup-guide/popular-use-cases/hide-sold-out-variants-from-quick-views) or contact us.
+One thing to keep in mind: the variant is still technically buyable via direct cart URL. If you have your variants exposed via a different surface (a search-results widget from another app, an external feed, etc.) and a shopper had previously added the variant to their cart, the order could still go through. We recommend not exposing in-stock variants in places where Camouflage doesn't run.
 
 </details>
 
 <details>
 
-<summary>Does the app work in a Featured Product section?</summary>
+<summary>How do I filter sold-out variants from collection page results?</summary>
 
-Yes. To activate Camouflage on featured product sections, go to the Setup page -> Advance Setup tab and tick the checkbox **"Enable Camouflage in featured product"**.
+**Step 1:** Enable the Availability filter in Shopify's free **Search & Discovery** app.
 
-If it doesn't work out of the box, please feel free to contact us.
+**Step 2:** Open the Camouflage app → Setup → **Advance Setup** tab → tick **"Filter sold out variants from Collection pages"** → Save.
+
+[Live demo](https://camouflage-demo.myshopify.com/collections/all?filter.v.availability=1) (password: `camouflage`)
+
+Full walkthrough: [Filter sold out variants from Collection pages](popular-use-cases/filter-sold-out-variants-from-collection-pages.md).
+
+</details>
+
+***
+
+## 🔧 Something's not working <a href="#something-s-not-working" id="something-s-not-working"></a>
+
+<details>
+
+<summary>The app works in the preview / theme editor but not on my live store.</summary>
+
+Two common causes:
+
+**1. The app embed is not enabled in your live theme.** The customiser preview runs the embed for that preview session even if it's not saved — but the live store needs the embed switched on and saved. Go to **Shopify admin → Themes → Customise (your live theme) → App embeds → Camouflage sold variants → toggle on → Save**.
+
+**2. The product has 2 or 3 option axes (e.g. Color and Size).** Multi-option variant hiding requires the upgraded plan — Camouflage offers a 14-day free trial. Open the in-app **Pricing** page from the Camouflage dashboard to start the trial.
+
+Still doesn't work? See [Troubleshooting](troubleshooting.md).
+
+</details>
+
+<details>
+
+<summary>My theme is listed as supported, but Camouflage still isn't working.</summary>
+
+This usually happens when:
+
+* Your theme has been customised (the variant picker structure was changed from the original).
+* A third-party app has replaced your standard variant picker with its own.
+* A new theme version is structured differently from older versions.
+
+In any of those cases, reach out via chat or email — share your store URL and a product link, and we'll look at the page structure and add the right configuration. It's usually a quick fix on our side.
 
 </details>
 
@@ -124,40 +166,144 @@ If it doesn't work out of the box, please feel free to contact us.
 
 <summary>Even after applying all the settings, the app doesn't work. Can it support my theme?</summary>
 
-It is possible that your theme might need some extra setup from our end. It just takes a few minutes to make it support a theme that is not heavily customised for the product variant pickers. Please feel free to reach out to us via chat/email for the same.
+Almost certainly yes. Most "this theme isn't supported" cases just need a small additional setup from our end — a few minutes for a standard theme, a bit longer for heavily customised ones.
+
+Please open the in-app chat or email [raj@codecrux.dev](mailto:raj@codecrux.dev) with your store URL.
 
 </details>
 
 <details>
 
-<summary>I have changed my theme and now the app doesn't work.</summary>
+<summary>I changed my theme and now Camouflage doesn't work.</summary>
 
-Please update the theme and variant picker information, and activate the app on your new theme by following the step 1 & 2 in the setup page. Make sure you click on the **"Save"** button at the top right corner in the theme customiser.
+When you publish a different theme, Shopify doesn't carry the app embed over — you have to re-enable it on the new theme:
 
-</details>
+1. Shopify admin → **Themes** → click **Customise** on your newly published theme.
+2. Click the **App embeds** icon in the sidebar.
+3. Toggle **Camouflage sold variants** on and click **Save**.
 
-<details>
+Then open the Camouflage app → **Setup** and confirm the **theme dropdown** matches your new theme's name (Camouflage's selectors depend on it).
 
-<summary>How does hide specific variants feature work?</summary>
-
-It marks the variant as sold out and hides from the customers. It doesn't prevent customers from buying the product if they previously had added the variant to the cart. It is recommended to not display variants at multiple places where the in-stock variants could be exposed for customers to add to the cart.
-
-</details>
-
-<details>
-
-<summary>How to turn off the app?</summary>
-
-Please follow these steps:
-
-Navigate to Shopify admin -> Themes -> Customise -> Click on App embeds Icon at the left sidebar -> Click on the switch button next to **Camouflage sold variants** and Save
+Full checklist: [Keeping Camouflage running after theme changes](camouflage-setup-guide/keeping-camouflage-running-after-theme-changes.md).
 
 </details>
 
 <details>
 
-<summary>If I remove the app, will the hidden variants show again?</summary>
+<summary>I changed a setting in Camouflage but my storefront still looks the same.</summary>
 
-Yes, all variants hidden by Camouflage will show again.
+Three things to try in this order:
+
+1. **Hard-refresh the page** (`Cmd/Ctrl + Shift + R`). Your browser may be serving you a cached copy.
+2. **Wait 1–2 minutes.** Shopify's CDN can hold onto the old page briefly. New shoppers see the change right away; you'll see it after a refresh.
+3. **Confirm the app embed is still on** in your live theme (Themes → Customise → App embeds → Camouflage sold variants → toggle on → Save).
+
+If none of these fix it, see [Troubleshooting](troubleshooting.md).
 
 </details>
+
+***
+
+## 📌 Quick views, featured products & multiple themes <a href="#quick-views-featured-products-and-multiple-themes" id="quick-views-featured-products-and-multiple-themes"></a>
+
+<details>
+
+<summary>Does Camouflage work in product quick views?</summary>
+
+If you're on a Shopify free 2.0 theme — yes. Open the Camouflage app → Setup → **Advance Setup** tab → tick **"Enable Camouflage in the quick view"** and Save.
+
+If your theme is a custom or third-party theme, or it doesn't work out of the box, see [Hide sold out variants from Quick views](popular-use-cases/hide-sold-out-variants-from-quick-views.md) or open the in-app chat — most quick-view setups take us less than a day.
+
+</details>
+
+<details>
+
+<summary>Does Camouflage work in a Featured Product section (home page, landing pages, etc.)?</summary>
+
+Yes. Open the Camouflage app → Setup → **Advance Setup** tab → tick **"Enable Camouflage in featured product"** and Save.
+
+If it doesn't work out of the box, open the in-app chat and share the page URL — we'll have it sorted quickly.
+
+</details>
+
+<details>
+
+<summary>Can I use Camouflage on more than one theme at the same time?</summary>
+
+Yes. Camouflage's settings live at the **store** level and apply to every theme that has the app embed enabled. So:
+
+* Live theme + draft theme — both can have Camouflage active simultaneously.
+* You can keep Camouflage enabled on the live theme while you test a redesign in a draft theme.
+* If you publish a different theme, you'll need to re-enable the embed on it ([details](camouflage-setup-guide/keeping-camouflage-running-after-theme-changes.md)).
+
+There's no extra cost — one Camouflage subscription per store covers all your themes.
+
+</details>
+
+***
+
+## 🔒 Privacy, performance & SEO <a href="#privacy-performance-and-seo" id="privacy-performance-and-seo"></a>
+
+<details>
+
+<summary>Will Camouflage slow down my storefront?</summary>
+
+Camouflage is built to be light:
+
+* The script is small and loads from Shopify's CDN.
+* It runs after your page's content is visible — sold-out variants disappear or get a strike-through smoothly rather than holding up the page.
+* No backend calls happen between your storefront and our servers during page load. Camouflage uses the data Shopify already sends to the page.
+
+If you're seeing slowness on your storefront and suspect Camouflage, open the in-app chat and share the page URL. We're happy to look at it.
+
+</details>
+
+<details>
+
+<summary>Is Camouflage GDPR / privacy compliant?</summary>
+
+Yes. Camouflage doesn't track or store any shopper personal data on the storefront. Everything happens in the shopper's browser using data Shopify already sent to the page.
+
+The only things Camouflage stores in our database are the **merchant-side** settings you configure (theme name, action, "always hide" lists, etc.). No shopper data is ever stored.
+
+</details>
+
+<details>
+
+<summary>Will Camouflage affect my SEO?</summary>
+
+No negative SEO impact. Sold-out / hidden variants are still part of the product — Camouflage just adjusts which options are shown in the picker. The product page itself — its title, description, and primary image — remains unchanged and fully crawlable by Google.
+
+</details>
+
+***
+
+## 🛑 Turning off or removing Camouflage <a href="#turning-off-or-removing-camouflage" id="turning-off-or-removing-camouflage"></a>
+
+<details>
+
+<summary>How do I turn off the app temporarily (without uninstalling)?</summary>
+
+Navigate to **Shopify admin → Themes → Customise → App embeds icon (left sidebar) → Camouflage sold variants → toggle off → Save**.
+
+Camouflage stops running immediately. Your settings stay saved — toggle it back on whenever you want to re-enable.
+
+</details>
+
+<details>
+
+<summary>If I uninstall the app, will the hidden variants show again?</summary>
+
+Yes. Camouflage hides variants at page-render time, not by deleting or modifying anything in Shopify. Uninstalling removes the page-render layer and every variant becomes visible again.
+
+If you have specific variants marked **"Always hide"** in the Camouflage app, those settings stay saved on our side for a while in case you reinstall — but they won't have any effect while the app is uninstalled.
+
+</details>
+
+***
+
+## Didn't find your answer?
+
+* Run through [Troubleshooting](troubleshooting.md) — many setup-time issues are covered there with click-by-click fixes.
+* Skim the [Glossary](glossary.md) if a term in the docs is unfamiliar.
+* Open the **in-app chat** from your Camouflage dashboard, or email [raj@codecrux.dev](mailto:raj@codecrux.dev). We're fast.

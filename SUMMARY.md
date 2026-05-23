@@ -12,6 +12,8 @@
 * [1️ Step 1: Setup basic configuration](camouflage-setup-guide/basic-configuration.md)
 * [2️ Step 2: Activate Camouflage in the theme](camouflage-setup-guide/activate-camouflage.md)
 * [3️ ADVANCED SETUP (optional)](camouflage-setup-guide/advanced-setup-optional.md)
+* [Testing in a draft theme](camouflage-setup-guide/testing-in-a-draft-theme.md)
+* [Keeping Camouflage running after theme changes](camouflage-setup-guide/keeping-camouflage-running-after-theme-changes.md)
 
 ## POPULAR USE CASES
 
@@ -33,6 +35,8 @@
 
 ***
 
+* [🛟 Troubleshooting](troubleshooting.md)
+* [📖 Glossary](glossary.md)
 * [FAQs](faqs.md)
 
 ## Configurations

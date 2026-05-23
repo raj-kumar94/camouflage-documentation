@@ -4,6 +4,12 @@ description: Custom configuration for product pages
 
 # 🎁 Product Page
 
+{% hint style="warning" %}
+**This page is for theme developers / agencies.** It explains the JavaScript configuration that tells Camouflage how your theme's variant picker is structured.
+
+Most merchants never touch this — selecting the right theme on the Camouflage **Setup** page covers it. If your theme isn't listed or doesn't behave correctly, [open the in-app chat](../troubleshooting.md) and our team will add the right config.
+{% endhint %}
+
 If Camouflage is not working on product pages, a simple Javascript configuration can be added to product pages in order to assist Camouflage to correctly identify the variant picker on the product pages. The configuration looks like the following. Note: You may need to update the configuration as per your theme's HTML structure.
 
 ```javascript
