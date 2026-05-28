@@ -15,7 +15,7 @@ Real-world scenarios:
 * **Pre-launch reveal.** You've added a new SKU in advance but don't want it visible until launch day at 10:00 AM. Schedule it to be hidden until that moment.
 * **Limited-time sale variants.** A "Black Friday Bundle" SKU that disappears at 11:59 PM on Cyber Monday.
 * **Restock blackout windows.** Your supplier is rebuilding the Navy XL pipeline between Aug 15 → Aug 30. Hide the variant during that period so customers don't order what you can't ship.
-* **Region-aware drops.** A pre-launch that only opens to Australia on Day 1 — combine schedule hiding with [country rules](hide-specific-variants-based-on-countries.md) (see "Combining with other rules" below).
+* **Region-aware drops.** A pre-launch that only opens to Australia on Day 1 - combine schedule hiding with [country rules](hide-specific-variants-based-on-countries.md) (see "Combining with other rules" below).
 
 ## Before you start
 
@@ -33,10 +33,10 @@ Real-world scenarios:
 6. Enter a **From** date / time and a **To** date / time. Both are required.
 7. Click **Save**.
 
-While the current store time is between **From** and **To**, the selected variants will be treated as hidden — exactly as if you'd ticked "Always hide" — for the whole window. Outside that window, they behave normally.
+While the current store time is between **From** and **To**, the selected variants will be treated as hidden - exactly as if you'd ticked "Always hide" - for the whole window. Outside that window, they behave normally.
 
 {% hint style="info" %}
-You can schedule far in the future. Many merchants set up the next quarter's seasonal calendar in one sitting — "Halloween" variants hidden until Oct 1, "Christmas" variants hidden until Nov 15, etc.
+You can schedule far in the future. Many merchants set up the next quarter's seasonal calendar in one sitting - "Halloween" variants hidden until Oct 1, "Christmas" variants hidden until Nov 15, etc.
 {% endhint %}
 
 ## Common scheduling patterns
@@ -76,14 +76,14 @@ Schedule rules layer with all the other "Hide specific variants" features. Examp
 
 * **Schedule + country**: A Halloween colourway visible only in the US from Sep 15 → Oct 31. Set both a schedule and a country list on the same variants.
 * **Schedule + customer tag**: A VIP early-access launch visible to `VIP`-tagged customers a week before everyone else (see [Show variants only to VIP / B2B / wholesale customers](show-variants-only-to-vip-or-b2b-customers.md)).
-* **Schedule + bulk rule**: Use the `Global hide rules` tab to schedule a rule that affects many products at once — e.g. "hide all `XS` variants of Sweatshirts during the manufacturing delay window."
+* **Schedule + bulk rule**: Use the `Global hide rules` tab to schedule a rule that affects many products at once - e.g. "hide all `XS` variants of Sweatshirts during the manufacturing delay window."
 
 ***
 
 ### Related
 
-* [Hide specific variants regardless of inventory quantity](hide-specific-variants-regardless-of-inventory-quantity.md) — for permanent hides
-* [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) — country-aware hiding
-* [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) — apply a rule to many products at once
+* [Hide specific variants regardless of inventory quantity](hide-specific-variants-regardless-of-inventory-quantity.md) - for permanent hides
+* [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) - country-aware hiding
+* [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) - apply a rule to many products at once
 
 **Need help?** If the schedule isn't behaving the way you expect, double-check Shopify's store timezone first. If that looks right, see [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

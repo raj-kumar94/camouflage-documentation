@@ -29,7 +29,7 @@ Your browser or Shopify's CDN may be serving you an old copy of the page. Hard r
 * **Mac:** `Cmd + Shift + R`
 * **Windows / Linux:** `Ctrl + F5` or `Ctrl + Shift + R`
 
-If the change shows up after a hard refresh, you're done — just let your customers know to refresh too (Shopify's CDN should sort itself out within a few minutes).
+If the change shows up after a hard refresh, you're done - just let your customers know to refresh too (Shopify's CDN should sort itself out within a few minutes).
 
 </details>
 
@@ -42,7 +42,7 @@ Camouflage only runs on themes where its **app embed** is enabled. To check:
 1. Shopify admin → **Online Store → Themes**
 2. On the **live theme**, click **Customise**
 3. In the customiser's left sidebar, click the **App embeds** icon (puzzle piece)
-4. Find **"Camouflage sold variants"** — the toggle must be **on**
+4. Find **"Camouflage sold variants"** - the toggle must be **on**
 5. Click **Save**
 
 If the toggle was already on, toggle it off, click Save, then toggle it back on and Save again. This forces Shopify to re-deploy the embed.
@@ -63,7 +63,7 @@ See [Step 1: Setup basic configuration](camouflage-setup-guide/basic-configurati
 
 ***
 
-## "It worked yesterday — today it doesn't"
+## "It worked yesterday - today it doesn't"
 
 <details>
 
@@ -89,7 +89,7 @@ Some apps replace the standard variant picker with their own (swatch apps, custo
 1. Open the Camouflage app → **Setup**.
 2. Look for the **"Third party app integrations"** dropdown.
 3. If the new app is listed, select it and **Save**.
-4. If it's not listed, [open the in-app chat](mailto:raj@codecrux.dev) — we add new integrations regularly.
+4. If it's not listed, [open the in-app chat](mailto:raj@codecrux.dev) - we add new integrations regularly.
 
 For the full integrations list, see [Third party apps integration](configurations/third-party-apps-integration.md).
 
@@ -105,7 +105,7 @@ Shopify caches product data for a few minutes per page. If you just edited inven
 
 ***
 
-## "Camouflage works in the preview / draft theme — but not on the live store"
+## "Camouflage works in the preview / draft theme - but not on the live store"
 
 <details>
 
@@ -121,7 +121,7 @@ Fix: go to **Themes → Customise (live theme) → App embeds → Camouflage sol
 
 <summary>Your product has 2 or 3 option axes (Color × Size, Color × Size × Material…)</summary>
 
-Single-option products work on every plan. Multi-option products need a one-time plan upgrade — Camouflage offers a 14-day free trial first.
+Single-option products work on every plan. Multi-option products need a plan upgrade - Camouflage offers a 14-day free trial first.
 
 Open the Camouflage app and check the banner on the dashboard. Or see your plan options in the in-app **Pricing** page.
 
@@ -131,7 +131,7 @@ Open the Camouflage app and check the banner on the dashboard. Or see your plan 
 
 <summary>The live theme has the embed but the theme template itself is custom</summary>
 
-Some agencies build product pages on a fully custom template (`product.custom-pdp.json`, for example) where the standard Shopify rendering doesn't happen. Camouflage still works on these, but may need a small additional setup. Open the in-app chat — share the product URL and we'll walk you through it.
+Some agencies build product pages on a fully custom template (`product.custom-pdp.json`, for example) where the standard Shopify rendering doesn't happen. Camouflage still works on these, but may need a small additional setup. Open the in-app chat - share the product URL and we'll walk you through it.
 
 </details>
 
@@ -163,7 +163,7 @@ If you want to hide a specific variant **regardless of inventory**, use [Hide sp
 
 <summary>The product is multi-option and you're on the free plan</summary>
 
-Multi-option (2+ axes) variant hiding requires the upgraded plan. There's a 14-day free trial — open the in-app **Pricing** page.
+Multi-option (2+ axes) variant hiding requires the upgraded plan. There's a 14-day free trial - open the in-app **Pricing** page.
 
 </details>
 
@@ -177,7 +177,7 @@ Multi-option (2+ axes) variant hiding requires the upgraded plan. There's a 14-d
 
 The product-page picker and the collection-page swatches are different things. To hide sold-out swatches on the collection grid, see [Hide sold out color swatches from Collection pages](popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md).
 
-If you'd like our team to do this setup for you, open the in-app chat and share your collection URL — it usually takes us less than a day.
+If you'd like our team to do this setup for you, open the in-app chat and share your collection URL - it usually takes us less than a day.
 
 </details>
 
@@ -185,7 +185,7 @@ If you'd like our team to do this setup for you, open the in-app chat and share 
 
 <summary>You want to hide entire sold-out products, not just swatches</summary>
 
-That's a different feature — see [Filter sold out variants from Collection pages](popular-use-cases/filter-sold-out-variants-from-collection-pages.md). It requires the Shopify **Search & Discovery** app's Availability filter to be on.
+That's a different feature - see [Filter sold out variants from Collection pages](popular-use-cases/filter-sold-out-variants-from-collection-pages.md). It requires the Shopify **Search & Discovery** app's Availability filter to be on.
 
 </details>
 
@@ -213,7 +213,7 @@ If this is causing a problem, open the in-app chat and we'll add a small CSS adj
 
 Some themes (especially newer "linked products" themes) rebuild the variant picker from scratch every time a swatch is clicked. Camouflage handles this automatically for most themes, but a few custom themes need an extra hint.
 
-Open the in-app chat and share a product URL — we'll add the right configuration. (This is a one-time setup per theme.)
+Open the in-app chat and share a product URL - we'll add the right configuration. (This is a one-time setup per theme.)
 
 </details>
 
@@ -223,11 +223,11 @@ Open the in-app chat and share a product URL — we'll add the right configurati
 
 <details>
 
-<summary>Safari restriction on `<option>` styling</summary>
+<summary>Safari restriction on `option` styling</summary>
 
 Safari doesn't let Shopify themes style individual `<option>` tags inside dropdowns. Camouflage works around this for many themes, but a few cases need a tweak.
 
-Workaround: switch the sold-out action from **Strike-through** to either **Hide** or **Strike-through-disabled** — both work in Safari.
+Workaround: switch the sold-out action from **Strike-through** to either **Hide** or **Strike-through-disabled** - both work in Safari.
 
 If you specifically need strike-through to work in dropdowns on Safari, open the in-app chat.
 
@@ -235,7 +235,7 @@ If you specifically need strike-through to work in dropdowns on Safari, open the
 
 ***
 
-## "I uninstalled and reinstalled Camouflage — now nothing works"
+## "I uninstalled and reinstalled Camouflage - now nothing works"
 
 <details>
 
@@ -255,7 +255,7 @@ Your previous settings (theme name, action, exception tags, "always hide" varian
 
 ## Still stuck?
 
-* Read [FAQs](faqs.md) — most common questions are answered there.
+* Read [FAQs](faqs.md) - most common questions are answered there.
 * Open the **in-app chat** from the Camouflage dashboard. Include your product URL.
 * Email [raj@codecrux.dev](mailto:raj@codecrux.dev).
 

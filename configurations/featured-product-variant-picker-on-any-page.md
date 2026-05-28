@@ -4,7 +4,7 @@
 **For merchants:** if you only need this on a standard Shopify 2.0 theme, just tick the "**Enable Camouflage in featured product**" checkbox under the Camouflage app → Setup → Advance Setup tab. The snippets below are for theme developers handling featured-product blocks on custom or unsupported themes.
 {% endhint %}
 
-This page is closely related to [Quick View](quick-view.md) — both use the same underlying `initCamouflageQuickViewUsingProductHandle` function. Featured-product blocks are essentially "always-open quick views" on landing pages, the home page, or any section that promotes a single product outside the main product page.
+This page is closely related to [Quick View](quick-view.md) - both use the same underlying `initCamouflageQuickViewUsingProductHandle` function. Featured-product blocks are essentially "always-open quick views" on landing pages, the home page, or any section that promotes a single product outside the main product page.
 
 ## Configuration for themes
 

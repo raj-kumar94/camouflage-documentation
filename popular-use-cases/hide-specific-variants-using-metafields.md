@@ -53,9 +53,9 @@ Manually setting each variant's metafield in Shopify admin can be a lot of work.
 
 Popular bulk-editing apps that work with this:
 
-* **Matrixify (Excelify)** — import a CSV with one row per variant and the metafield column filled in
-* **Bulk Editor in Shopify admin** — Products → select variants → "Edit products" → add the metafield column
-* **Shopify's Admin API** — for engineering teams managing variant data programmatically
+* **Matrixify (Excelify)** - import a CSV with one row per variant and the metafield column filled in
+* **Bulk Editor in Shopify admin** - Products → select variants → "Edit products" → add the metafield column
+* **Shopify's Admin API** - for engineering teams managing variant data programmatically
 
 ***
 

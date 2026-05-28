@@ -22,23 +22,23 @@ Camouflage is easy to integrate with a wide range of custom themes and popular a
 
 You don't have to touch any code to use Camouflage. Here's the path from install to your store looking cleaner:
 
-1. **Install** — Add Camouflage to your store from the Shopify App Store.
-2. **Choose your theme** — Pick your theme name from the dropdown on the Setup page. This tells Camouflage what your variant picker looks like.
-3. **Decide what should happen to sold-out variants** — Hide them, show them with a strike-through, or just disable them. You choose.
-4. **Activate Camouflage in your theme** — One click from the Setup page turns on the Camouflage app embed in your live theme.
-5. **Done** — Reload your product pages and the sold-out / unavailable variants will disappear (or be greyed out, depending on what you chose).
+1. **Install** - Add Camouflage to your store from the Shopify App Store.
+2. **Choose your theme** - Pick your theme name from the dropdown on the Setup page. This tells Camouflage what your variant picker looks like.
+3. **Decide what should happen to sold-out variants** - Hide them, show them with a strike-through, or just disable them. You choose.
+4. **Activate Camouflage in your theme** - One click from the Setup page turns on the Camouflage app embed in your live theme.
+5. **Done** - Reload your product pages and the sold-out / unavailable variants will disappear (or be greyed out, depending on what you chose).
 
 {% hint style="info" %}
-Want to try it without affecting your live store first? Camouflage works in **draft themes** too — see [Testing in a draft theme](../camouflage-setup-guide/testing-in-a-draft-theme.md).
+Want to try it without affecting your live store first? Camouflage works in **draft themes** too - see [Testing in a draft theme](../camouflage-setup-guide/testing-in-a-draft-theme.md).
 {% endhint %}
 
 ## Where Camouflage works in your store
 
-* **Product pages** — the variant picker (the Size / Color / Material dropdowns or buttons)
-* **Collection pages** — sold-out colour swatches on product cards
-* **Quick views** — the popup variant picker some themes show on the collection page
-* **Featured products** — variant pickers shown on the home page, landing pages, or any custom section
-* **Checkout** — a final safety net so a sold-out / restricted variant can't be ordered even by direct link
+* **Product pages** - the variant picker (the Size / Color / Material dropdowns or buttons)
+* **Collection pages** - sold-out colour swatches on product cards
+* **Quick views** - the popup variant picker some themes show on the collection page
+* **Featured products** - variant pickers shown on the home page, landing pages, or any custom section
+* **Checkout** - a final safety net so a sold-out / restricted variant can't be ordered even by direct link
 
 ## Next steps
 

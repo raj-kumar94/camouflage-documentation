@@ -2,7 +2,7 @@
 
 ## What this does
 
-When this feature is on, every link to a collection page in your store gets an "in stock only" filter automatically applied. So when a shopper clicks **Collections → Shoes**, they only see products with at least one variant in stock — no sold-out products in the grid at all.
+When this feature is on, every link to a collection page in your store gets an "in stock only" filter automatically applied. So when a shopper clicks **Collections → Shoes**, they only see products with at least one variant in stock - no sold-out products in the grid at all.
 
 This is different from hiding **swatches** on the collection page (which shows the product but greys out unavailable colours). Use this feature when you want to remove entire sold-out **products** from view.
 
@@ -31,9 +31,9 @@ If you don't already have the Availability filter set up, this short video walks
 Open your storefront in a regular browser tab and click any link that leads to a collection page (the main nav, "Shop all", category pages, etc.). The URL should now end with `?filter.v.availability=1` and sold-out products should be absent from the grid.
 
 {% hint style="warning" %}
-The first navigation might still show cached results — do a hard refresh (`Cmd/Ctrl + Shift + R`) to see the change.
+The first navigation might still show cached results - do a hard refresh (`Cmd/Ctrl + Shift + R`) to see the change.
 {% endhint %}
 
 ## Want sold-out **swatches** hidden instead?
 
-If you want to keep showing sold-out **products** but hide unavailable **colours / sizes** on each card, that's a different feature — see [Hide sold out color swatches from Collection pages](hide-sold-out-color-swatches-from-collection-pages.md).
+If you want to keep showing sold-out **products** but hide unavailable **colours / sizes** on each card, that's a different feature - see [Hide sold out color swatches from Collection pages](hide-sold-out-color-swatches-from-collection-pages.md).

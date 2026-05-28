@@ -1,12 +1,12 @@
 ---
 description: >-
   What to check whenever you publish a new theme, install a new app, or switch
-  templates — so Camouflage doesn't go quiet.
+  templates - so Camouflage doesn't go quiet.
 ---
 
 # Keeping Camouflage running after theme changes
 
-Camouflage runs from inside your active theme. Most of the time you can ignore that detail — but a few common Shopify actions can switch it off without warning. Here's what to do.
+Camouflage runs from inside your active theme. Most of the time you can ignore that detail - but a few common Shopify actions can switch it off without warning. Here's what to do.
 
 ***
 
@@ -28,7 +28,7 @@ Publishing a different theme is the **most common** reason Camouflage stops work
 * If you use exception tags or include-tags, they're still configured.
 
 {% hint style="info" %}
-Camouflage settings (sold-out action, exception tags, "always hide" variants, etc.) survive theme changes — they're saved at the store level. You only need to re-enable the **app embed** and confirm the **theme name** dropdown is up to date.
+Camouflage settings (sold-out action, exception tags, "always hide" variants, etc.) survive theme changes - they're saved at the store level. You only need to re-enable the **app embed** and confirm the **theme name** dropdown is up to date.
 {% endhint %}
 
 ***
@@ -37,7 +37,7 @@ Camouflage settings (sold-out action, exception tags, "always hide" variants, et
 
 Some themes (like Dawn or third-party themes you bought from the Theme Store) get version updates. Updating usually means a duplicated theme with the new version, which you then publish.
 
-Treat it the same as publishing a new theme — go through the checklist above.
+Treat it the same as publishing a new theme - go through the checklist above.
 
 ***
 
@@ -58,9 +58,9 @@ If you install one of these, Camouflage may need to be told about it so it works
 1. Open the Camouflage app → **Setup** page.
 2. Look for the **"Third party app integrations"** dropdown.
 3. If the new app is listed, select it and click **Save**.
-4. Reload your product page — confirm Camouflage is hiding the right variants on the new picker.
+4. Reload your product page - confirm Camouflage is hiding the right variants on the new picker.
 
-If the app isn't listed, [open the in-app chat](mailto:raj@codecrux.dev) — we add new integrations regularly and can usually have it working within a day.
+If the app isn't listed, [open the in-app chat](mailto:raj@codecrux.dev) - we add new integrations regularly and can usually have it working within a day.
 
 ***
 
@@ -71,7 +71,7 @@ If you (or your designer) creates a new product template like `product.custom-pd
 **Quick check:**
 
 * Open Camouflage app → **Status** (or the in-app health check).
-* Browse to the affected product page — does Camouflage say it detected the picker correctly?
+* Browse to the affected product page - does Camouflage say it detected the picker correctly?
 
 If it doesn't pick it up, share the product URL via in-app chat and we'll add the right configuration.
 
@@ -79,7 +79,7 @@ If it doesn't pick it up, share the product URL via in-app chat and we'll add th
 
 ## When you change Camouflage's settings
 
-This one's straightforward, but worth saying: after **any** change to the Camouflage Setup page (theme name, sold-out action, advanced options), do a hard refresh on your storefront (`Cmd/Ctrl + Shift + R`) — your browser may be caching the old config.
+This one's straightforward, but worth saying: after **any** change to the Camouflage Setup page (theme name, sold-out action, advanced options), do a hard refresh on your storefront (`Cmd/Ctrl + Shift + R`) - your browser may be caching the old config.
 
 ***
 
@@ -98,7 +98,7 @@ After any of the changes above, run through this in 60 seconds:
 
 1. Hard refresh a product page in your storefront.
 2. The picker should match what you configured on the Setup page (hide / strike-through / disable).
-3. Switch between variants — Add to Cart should update correctly.
-4. Open a collection page if you use collection-grid swatches — verify the swatches look right.
+3. Switch between variants - Add to Cart should update correctly.
+4. Open a collection page if you use collection-grid swatches - verify the swatches look right.
 
 If any step is off, head to [Troubleshooting](../troubleshooting.md).

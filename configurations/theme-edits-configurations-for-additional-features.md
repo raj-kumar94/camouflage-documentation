@@ -5,7 +5,7 @@ icon: pen-to-square
 # Theme edits/configurations for additional features
 
 {% hint style="warning" %}
-**This page is for theme developers / agencies.** The Liquid snippets below are direct edits to your theme files — they bridge Camouflage with theme-specific features like image fallback, swatch order, or special variant rendering.
+**This page is for theme developers / agencies.** The Liquid snippets below are direct edits to your theme files - they bridge Camouflage with theme-specific features like image fallback, swatch order, or special variant rendering.
 
 Most merchants don't need these. If you'd like our team to apply the right edits to your theme, [open the in-app chat](../troubleshooting.md).
 {% endhint %}

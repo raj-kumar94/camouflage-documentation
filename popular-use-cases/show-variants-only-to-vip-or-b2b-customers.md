@@ -1,12 +1,12 @@
 ---
 description: >-
   Make specific variants visible only to logged-in customers carrying a
-  particular tag — VIP, B2B, Wholesale, or any custom segment.
+  particular tag - VIP, B2B, Wholesale, or any custom segment.
 ---
 
 # Show variants only to VIP / B2B / wholesale customers
 
-Reserve specific variants for a chosen customer segment by tagging customers in Shopify and then telling Camouflage "this variant is for tag X only — hide it from everyone else."
+Reserve specific variants for a chosen customer segment by tagging customers in Shopify and then telling Camouflage "this variant is for tag X only - hide it from everyone else."
 
 Real-world scenarios:
 
@@ -29,7 +29,7 @@ A customer can have any number of tags. Common patterns:
 * Tier tags like `Wholesale-Bronze`, `Wholesale-Silver`, `Wholesale-Gold` for graduated access.
 
 {% hint style="warning" %}
-Customer tags only apply to **logged-in** shoppers. Anonymous visitors have no tags and won't see the tagged-exclusive variants. If you want exclusive variants visible to logged-out shoppers too, you'd need a different rule pattern — open the in-app chat and we'll help you think it through.
+Customer tags only apply to **logged-in** shoppers. Anonymous visitors have no tags and won't see the tagged-exclusive variants. If you want exclusive variants visible to logged-out shoppers too, you'd need a different rule pattern - open the in-app chat and we'll help you think it through.
 {% endhint %}
 
 ## Before you start
@@ -38,7 +38,7 @@ Customer tags only apply to **logged-in** shoppers. Anonymous visitors have no t
 2. Tag the customers you want to give access to (see above).
 3. Decide whether you want to apply the rule to one product (use the individual flow) or many products at once (use the bulk-rules flow).
 
-## Option A — show a variant only to tagged customers (one product)
+## Option A - show a variant only to tagged customers (one product)
 
 Use this when you want to give VIPs access to a specific colour / size on one specific product.
 
@@ -46,24 +46,24 @@ Use this when you want to give VIPs access to a specific colour / size on one sp
 2. Search for the product.
 3. Click the **"Select variants"** button.
 4. Select the variants you want to make tag-exclusive.
-5. Click **"Hide from countries"** — yes, the same flow handles customer tags too. (The label will likely be expanded to also mention customer tags in the next UI revision.)
+5. Click **"Hide from countries"** - yes, the same flow handles customer tags too. (The label will likely be expanded to also mention customer tags in the next UI revision.)
 6. In the modal, find the **Customer tags** field. Enter the tag (e.g. `VIP`).
 7. Save.
 
-The variant is now hidden from everyone — including logged-out shoppers — and visible only to customers logged in with the `VIP` tag.
+The variant is now hidden from everyone - including logged-out shoppers - and visible only to customers logged in with the `VIP` tag.
 
-## Option B — show variants only to tagged customers (many products at once)
+## Option B - show variants only to tagged customers (many products at once)
 
 Use this when the rule should apply to a whole product type, a whole tag, or many products at once.
 
 1. Go to the Camouflage app → `Hide specific variants` page → `Global hide rules` tab.
 2. Click **"+Add Rule"**.
 3. Pick a rule type:
-   * **Product Option Rule** — match by option name + values (e.g. all "Wholesale" sizes).
-   * **Variant Title Rule** — match by full variant titles.
-   * **Variant SKU Rule** — match by SKU patterns.
+   * **Product Option Rule** - match by option name + values (e.g. all "Wholesale" sizes).
+   * **Variant Title Rule** - match by full variant titles.
+   * **Variant SKU Rule** - match by SKU patterns.
 4. Set the option name and values you want to hide from non-tagged customers.
-5. In the **Customer tags** field, enter the tag(s) of customers who **should still see** the variant. *(Yes — somewhat counter-intuitive: list the tag that means "still allowed to see this.")*
+5. In the **Customer tags** field, enter the tag(s) of customers who **should still see** the variant. *(Yes - somewhat counter-intuitive: list the tag that means "still allowed to see this.")*
 6. Optionally limit the rule to a specific **product type** or **product tag** so the rule only applies to part of your catalogue.
 7. Click **"Save Rules"**.
 
@@ -81,10 +81,10 @@ For a rule that says "show these variants only to a tagged customer", you're eff
 
 The fastest way:
 
-1. Open your store in a regular browser tab while **logged out** — the variant should be hidden.
+1. Open your store in a regular browser tab while **logged out** - the variant should be hidden.
 2. Log in as a test customer **with** the required tag (you can create a test customer in Shopify admin and tag them).
-3. Reload the product page — the variant should now appear.
-4. Log in as a test customer **without** the tag — the variant should be hidden again.
+3. Reload the product page - the variant should now appear.
+4. Log in as a test customer **without** the tag - the variant should be hidden again.
 
 ## Make the hidden variants visible again
 
@@ -95,8 +95,8 @@ The fastest way:
 
 ### Related
 
-* [Hide variants from specific customer groups (the opposite)](hide-variants-from-b2b-or-wholesale-customers.md) — hide from a tag instead of show-only-to a tag
-* [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) — full bulk-rules walkthrough
-* [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) — same flow handles country filtering
+* [Hide variants from specific customer groups (the opposite)](hide-variants-from-b2b-or-wholesale-customers.md) - hide from a tag instead of show-only-to a tag
+* [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) - full bulk-rules walkthrough
+* [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) - same flow handles country filtering
 
 **Need help?** If the variant isn't appearing for the right customers, double-check the customer's tags in Shopify admin first. Then [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

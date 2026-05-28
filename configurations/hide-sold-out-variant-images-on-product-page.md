@@ -5,9 +5,9 @@ icon: image-polaroid
 # Hide sold out variant images on product page
 
 {% hint style="warning" %}
-**This page is for theme developers / agencies.** It explains how to hide variant-specific images / thumbnails on the product page gallery when those variants are sold out — a per-theme customisation.
+**This page is for theme developers / agencies.** It explains how to hide variant-specific images / thumbnails on the product page gallery when those variants are sold out - a per-theme customisation.
 
-Most merchants don't need this. If you'd like our team to set it up for your theme, [open the in-app chat](../troubleshooting.md) — share your store URL and a product link.
+Most merchants don't need this. If you'd like our team to set it up for your theme, [open the in-app chat](../troubleshooting.md) - share your store URL and a product link.
 {% endhint %}
 
 {% hint style="info" %}

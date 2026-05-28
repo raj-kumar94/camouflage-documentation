@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **This page is for theme developers / agencies.** It describes the JavaScript configuration that connects Camouflage to a theme's **quick view** (the popup variant picker on collection cards).
 
-Most merchants don't need to touch this — if your theme is a Shopify free 2.0 theme, just tick the "**Enable Camouflage in the quick view**" checkbox in the Camouflage app → Setup → Advance Setup. If that doesn't work for your theme, [open the in-app chat](../troubleshooting.md) and we'll set it up.
+Most merchants don't need to touch this - if your theme is a Shopify free 2.0 theme, just tick the "**Enable Camouflage in the quick view**" checkbox in the Camouflage app → Setup → Advance Setup. If that doesn't work for your theme, [open the in-app chat](../troubleshooting.md) and we'll set it up.
 {% endhint %}
 
 {% hint style="info" %}

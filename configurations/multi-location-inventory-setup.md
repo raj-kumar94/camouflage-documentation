@@ -9,7 +9,7 @@ description: >-
 
 If your store has inventory in **more than one location** (e.g. a warehouse + a retail store, or different regional warehouses), Shopify reports a variant as **available** even if the stock you actually ship to a given shopper is zero. To make Camouflage hide the right variants for the right shoppers, you need to tell Shopify which locations serve which countries.
 
-This is done with **Shipping profiles** — a built-in Shopify feature, not a Camouflage setting.
+This is done with **Shipping profiles** - a built-in Shopify feature, not a Camouflage setting.
 
 {% hint style="info" %}
 You only need this guide if you ship from **multiple locations** AND the products you sell at each location are different. If every location can fulfill every product, Shopify already does the right thing and you can skip this page.
@@ -44,7 +44,7 @@ For products that are stocked at more than one location, make sure the per-locat
 
 ## Step 3: Verify in Camouflage
 
-Once Shopify is reporting variant availability correctly **per country**, Camouflage automatically picks up those signals — no extra Camouflage setting needed. Open a product page in an incognito window using a country / region that has limited stock and confirm the right variants are hidden.
+Once Shopify is reporting variant availability correctly **per country**, Camouflage automatically picks up those signals - no extra Camouflage setting needed. Open a product page in an incognito window using a country / region that has limited stock and confirm the right variants are hidden.
 
 ## Troubleshooting
 
@@ -55,7 +55,7 @@ Once Shopify is reporting variant availability correctly **per country**, Camouf
 * Confirm the product is in a Shipping profile that uses the right origin location.
 * Confirm the customer's country falls into a Shipping zone that's linked to that origin.
 * Open the product page from an incognito browser tab in the customer's country (you can use a VPN or change your Shopify localisation country in the URL with `?country=US`).
-* If it still doesn't behave correctly, please open the in-app chat — we'll inspect the setup with you.
+* If it still doesn't behave correctly, please open the in-app chat - we'll inspect the setup with you.
 
 </details>
 
@@ -63,6 +63,6 @@ Once Shopify is reporting variant availability correctly **per country**, Camouf
 
 <summary>I want country-specific hiding without using Shipping profiles</summary>
 
-You can hide specific variants for specific countries using Camouflage's own per-variant country rules — without touching Shopify Shipping profiles. See [Hide specific variants based on countries](../popular-use-cases/hide-specific-variants-based-on-countries.md).
+You can hide specific variants for specific countries using Camouflage's own per-variant country rules - without touching Shopify Shipping profiles. See [Hide specific variants based on countries](../popular-use-cases/hide-specific-variants-based-on-countries.md).
 
 </details>

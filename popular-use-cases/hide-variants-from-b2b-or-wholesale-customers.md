@@ -1,6 +1,6 @@
 ---
 description: >-
-  Hide specific variants from customers carrying a particular tag — the
+  Hide specific variants from customers carrying a particular tag - the
   inverse of the VIP-only pattern. Useful when wholesale or B2B customers
   shouldn't see consumer-priced or single-unit variants.
 ---
@@ -11,8 +11,8 @@ The "show only to tagged customers" pattern has a useful inverse: **hide a varia
 
 Real-world scenarios:
 
-* **B2B catalogues shouldn't show retail-priced single units.** Hide the "Pack of 1" SKU from `B2B`-tagged customers — they should only see "Pack of 12" and "Pack of 24."
-* **Hide promo / clearance variants from wholesale buyers.** Your "30% off summer leftovers" SKU is for retail customers only — `Wholesale`-tagged customers shouldn't see it on the picker.
+* **B2B catalogues shouldn't show retail-priced single units.** Hide the "Pack of 1" SKU from `B2B`-tagged customers - they should only see "Pack of 12" and "Pack of 24."
+* **Hide promo / clearance variants from wholesale buyers.** Your "30% off summer leftovers" SKU is for retail customers only - `Wholesale`-tagged customers shouldn't see it on the picker.
 * **Staff-only hidden products.** A separate SKU only meant for retail customers, while staff (tagged `Staff`) should see a different one.
 * **Region-specific buyer types.** A variant available to consumers (logged-out, anonymous, or non-B2B-tagged) but blocked for distributors who'd circumvent pricing rules.
 
@@ -32,7 +32,7 @@ You can list multiple tags. `-B2B, -Wholesale` means "hide from anyone with `B2B
    * Shopify admin → Customers → open a customer → Tags field → add the tag (e.g. `B2B`) → Save.
 3. Decide whether the rule applies to one product (individual flow) or many products at once (bulk-rules flow).
 
-## Option A — hide a variant from tagged customers (one product)
+## Option A - hide a variant from tagged customers (one product)
 
 1. Go to the Camouflage app → `Hide specific variants` page → `Select variants individually` tab.
 2. Search for the product.
@@ -44,7 +44,7 @@ You can list multiple tags. `-B2B, -Wholesale` means "hide from anyone with `B2B
 
 The variant is now visible to **everyone except** customers tagged `B2B`.
 
-## Option B — hide variants from tagged customers (many products at once)
+## Option B - hide variants from tagged customers (many products at once)
 
 1. Go to the Camouflage app → `Hide specific variants` page → `Global hide rules` tab.
 2. Click **"+Add Rule"**.
@@ -56,22 +56,22 @@ The variant is now visible to **everyone except** customers tagged `B2B`.
 
 ## Verify it's working
 
-1. Open your store in an incognito tab (logged out) — the variant **should be visible**.
-2. Log in as a test customer **with** the `B2B` tag — the variant **should be hidden**.
-3. Log in as a test customer **without** the `B2B` tag — the variant **should be visible**.
+1. Open your store in an incognito tab (logged out) - the variant **should be visible**.
+2. Log in as a test customer **with** the `B2B` tag - the variant **should be hidden**.
+3. Log in as a test customer **without** the `B2B` tag - the variant **should be visible**.
 
 ## Common pitfalls
 
 <details>
 
-<summary>Logged-out shoppers can still see the variant — is that right?</summary>
+<summary>Logged-out shoppers can still see the variant - is that right?</summary>
 
-Yes, that's the whole point of the `-Tag` pattern. Anonymous / logged-out shoppers don't carry any customer tags, so the "hide from `B2B`" rule doesn't apply to them — they see the variant normally.
+Yes, that's the whole point of the `-Tag` pattern. Anonymous / logged-out shoppers don't carry any customer tags, so the "hide from `B2B`" rule doesn't apply to them - they see the variant normally.
 
 If you want to **also** hide the variant from anonymous shoppers, you have two options:
 
-* Use the **positive** pattern instead: list the tags of customers who *should still see* the variant (e.g. `Retail`). Anyone whose tags don't include `Retail` — including logged-out shoppers — won't see the variant. See [Show variants only to VIP / B2B / wholesale customers](show-variants-only-to-vip-or-b2b-customers.md).
-* Make it a permanent `Always hide` (see [Hide specific variants regardless of inventory quantity](hide-specific-variants-regardless-of-inventory-quantity.md)) — but that hides from everyone, including retail customers.
+* Use the **positive** pattern instead: list the tags of customers who *should still see* the variant (e.g. `Retail`). Anyone whose tags don't include `Retail` - including logged-out shoppers - won't see the variant. See [Show variants only to VIP / B2B / wholesale customers](show-variants-only-to-vip-or-b2b-customers.md).
+* Make it a permanent `Always hide` (see [Hide specific variants regardless of inventory quantity](hide-specific-variants-regardless-of-inventory-quantity.md)) - but that hides from everyone, including retail customers.
 
 </details>
 
@@ -82,8 +82,8 @@ If you want to **also** hide the variant from anonymous shoppers, you have two o
 Check:
 
 * The customer actually has the `B2B` tag in Shopify admin → Customers (no typo, no extra whitespace).
-* The customer is logged in on the storefront (not just on Shopify admin) — open the same browser session that's logged in.
-* You used the exact same case — `B2B`, not `b2b`. Customer tags are case-sensitive in Camouflage rules.
+* The customer is logged in on the storefront (not just on Shopify admin) - open the same browser session that's logged in.
+* You used the exact same case - `B2B`, not `b2b`. Customer tags are case-sensitive in Camouflage rules.
 * Browser cache. Try a hard refresh (`Cmd/Ctrl + Shift + R`).
 
 </details>
@@ -92,11 +92,11 @@ Check:
 
 <summary>I want different variants hidden from different customer tiers</summary>
 
-Set up multiple rules — one per tier:
+Set up multiple rules - one per tier:
 
 * "Hide bulk-pack from `-Retail`" (so only retail customers can't see it… wait, that's the opposite). Use the positive form: "Show bulk-pack only to `B2B-Gold`."
-* "Hide consumer-priced single unit from `-B2B`" — hide it from any B2B customer.
-* "Hide promotional SKU from `-Wholesale, -B2B`" — hide it from anyone in the wholesale or B2B segments.
+* "Hide consumer-priced single unit from `-B2B`" - hide it from any B2B customer.
+* "Hide promotional SKU from `-Wholesale, -B2B`" - hide it from anyone in the wholesale or B2B segments.
 
 The [Global hide rules](hide-variants-in-bulk-regardless-of-inventory-quantity.md) tab is the right place when you have multiple tier-specific rules.
 
@@ -111,8 +111,8 @@ The [Global hide rules](hide-variants-in-bulk-regardless-of-inventory-quantity.m
 
 ### Related
 
-* [Show variants only to VIP / B2B / wholesale customers](show-variants-only-to-vip-or-b2b-customers.md) — the positive form
-* [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) — same flow, country-based
-* [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) — bulk-rules walkthrough
+* [Show variants only to VIP / B2B / wholesale customers](show-variants-only-to-vip-or-b2b-customers.md) - the positive form
+* [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) - same flow, country-based
+* [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) - bulk-rules walkthrough
 
 **Need help?** If the rule isn't behaving the way you expect, see [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

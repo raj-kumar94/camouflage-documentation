@@ -1,6 +1,6 @@
 # Hide variants in bulk regardless of inventory quantity
 
-Set a single rule that hides matching variants across **many products at once** — handy when you need to pull a size, colour, or SKU pattern site-wide, e.g. "hide every XS size during a manufacturing delay" or "hide all Navy Blue items from B2B customers in the US."
+Set a single rule that hides matching variants across **many products at once** - handy when you need to pull a size, colour, or SKU pattern site-wide, e.g. "hide every XS size during a manufacturing delay" or "hide all Navy Blue items from B2B customers in the US."
 
 You can layer extra conditions on each rule:
 

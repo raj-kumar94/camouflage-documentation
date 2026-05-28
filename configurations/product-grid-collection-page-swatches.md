@@ -7,7 +7,7 @@ description: Hide sold out swatches from collection page's product grids
 {% hint style="warning" %}
 **This page is for theme developers / agencies.** It describes the JSON / JavaScript configuration that lets Camouflage hide sold-out swatches on the **collection page** for a custom or unsupported theme.
 
-Most merchants don't need to touch this — if you'd like our team to set up your theme for you, [open the in-app chat](../troubleshooting.md) and share your collection URL. We usually finish in less than a day.
+Most merchants don't need to touch this - if you'd like our team to set up your theme for you, [open the in-app chat](../troubleshooting.md) and share your collection URL. We usually finish in less than a day.
 {% endhint %}
 
 {% hint style="info" %}
@@ -20,13 +20,13 @@ Global property name: <mark style="color:blue;">`window.hide_oos_product_grid`</
 
 * [What needs to be configured](#h_required-properties)
 * Configuration is set via the **Customisations → Custom JS** field in your Camouflage admin, OR as a `window.hide_oos_product_grid = {...}` snippet in your theme.
-* Once set, it auto-runs on collection pages. You can also call it explicitly — see [`window.CAMOUFLAGEE.startCamouflageProductGrid`](../popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md).
+* Once set, it auto-runs on collection pages. You can also call it explicitly - see [`window.CAMOUFLAGEE.startCamouflageProductGrid`](../popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md).
 
 ### Related pages
 
-* [Hide sold out color swatches from Collection pages](../popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md) — call this from custom code on a specific event
-* [Product Grid Pagination](product-grid-pagination.md) — re-trigger hiding after AJAX pagination / infinite scroll
-* [Mutation Observer for restoring attributes](mutation-observer-for-restoring-attributes.md) — for themes that re-render the grid on every filter change
+* [Hide sold out color swatches from Collection pages](../popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md) - call this from custom code on a specific event
+* [Product Grid Pagination](product-grid-pagination.md) - re-trigger hiding after AJAX pagination / infinite scroll
+* [Mutation Observer for restoring attributes](mutation-observer-for-restoring-attributes.md) - for themes that re-render the grid on every filter change
 
 {% hint style="info" %}
 To hide no image variant swatches, add this liquid code to the product card

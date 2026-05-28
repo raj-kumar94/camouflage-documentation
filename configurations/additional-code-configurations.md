@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 **This page is for theme developers / agencies** handling unusual variant-picker layouts. The snippets here are copy-paste starting points for the **Customisations → Custom JS** field in your Camouflage admin.
 
-Most merchants don't need this — if your theme isn't behaving correctly, [open the in-app chat](../troubleshooting.md) and our team will write the right snippet for you.
+Most merchants don't need this - if your theme isn't behaving correctly, [open the in-app chat](../troubleshooting.md) and our team will write the right snippet for you.
 {% endhint %}
 
 ### Custom \`setCustomCamouflageSelectors\` function for mixed layout. Ref Broadcast 3.x theme

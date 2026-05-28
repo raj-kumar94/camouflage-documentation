@@ -1,6 +1,6 @@
 # Hide variants based on inventory level
 
-By default, Shopify only considers a variant "sold out" when its inventory hits **zero**. With Camouflage you can set a higher threshold so a variant is treated as sold out **before** it actually runs out — useful when:
+By default, Shopify only considers a variant "sold out" when its inventory hits **zero**. With Camouflage you can set a higher threshold so a variant is treated as sold out **before** it actually runs out - useful when:
 
 * You want to hold back the last few units for in-store walk-ins, wholesale orders, or returns processing.
 * You're seeing too many "near sold-out" situations where two shoppers race to buy the last item.
@@ -30,14 +30,14 @@ So if your sold-out action is **Hide**, a variant with 3 units left disappears f
 <figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-The threshold applies to **all** products and variants in your store. If you want a different threshold for a specific product or variant, contact us via in-app chat — we can help you set per-product rules.
+The threshold applies to **all** products and variants in your store. If you want a different threshold for a specific product or variant, contact us via in-app chat - we can help you set per-product rules.
 {% endhint %}
 
 ## Verify it's working
 
 1. Pick a product where one variant has low inventory (at or below your threshold).
 2. Open that product in your storefront in a regular browser tab.
-3. The low-stock variant should now be hidden / struck-through / disabled — the same way sold-out variants are.
+3. The low-stock variant should now be hidden / struck-through / disabled - the same way sold-out variants are.
 
 If it's not behaving as expected, see [Troubleshooting](../troubleshooting.md).
 

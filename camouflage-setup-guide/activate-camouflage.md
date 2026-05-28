@@ -3,7 +3,7 @@
 After you've finished [Step 1](basic-configuration.md), you need to switch Camouflage **on** inside your theme. Without this step Camouflage is installed but not running on your storefront.
 
 {% hint style="info" %}
-Want to test Camouflage on a copy of your theme first, without touching the live store? Use a draft theme — see [Testing in a draft theme](testing-in-a-draft-theme.md).
+Want to test Camouflage on a copy of your theme first, without touching the live store? Use a draft theme - see [Testing in a draft theme](testing-in-a-draft-theme.md).
 {% endhint %}
 
 ## The fast way (one click)
@@ -15,7 +15,7 @@ Want to test Camouflage on a copy of your theme first, without touching the live
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-That's it. Refresh any product page in your store — sold-out / unavailable variants should now behave the way you configured on the Setup page (hidden, strike-through, or disabled).
+That's it. Refresh any product page in your store - sold-out / unavailable variants should now behave the way you configured on the Setup page (hidden, strike-through, or disabled).
 
 ## The manual way (any theme)
 
@@ -40,10 +40,10 @@ After saving, open any product in your store (in a regular browser tab, not the 
 * No console error messages appear in the page.
 
 {% hint style="warning" %}
-Still seeing the sold-out variants? Try a **hard refresh** first (`Cmd/Ctrl + Shift + R`) — your browser may be caching the old page. If that doesn't help, see [Troubleshooting](../troubleshooting.md).
+Still seeing the sold-out variants? Try a **hard refresh** first (`Cmd/Ctrl + Shift + R`) - your browser may be caching the old page. If that doesn't help, see [Troubleshooting](../troubleshooting.md).
 {% endhint %}
 
 ## Next step
 
 * Want to fine-tune behaviour like inventory thresholds, exception tags, or hiding variants with no image? Continue to [Advanced Setup (optional)](advanced-setup-optional.md).
-* If something's not behaving correctly, head over to [Troubleshooting](../troubleshooting.md) or open the in-app chat from the Camouflage dashboard — we're happy to help.
+* If something's not behaving correctly, head over to [Troubleshooting](../troubleshooting.md) or open the in-app chat from the Camouflage dashboard - we're happy to help.

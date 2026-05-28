@@ -1,6 +1,6 @@
 # Hide specific variants based on countries
 
-Pick specific variants and hide them only from shoppers in certain countries — useful when:
+Pick specific variants and hide them only from shoppers in certain countries - useful when:
 
 * A supplier ships some colours / sizes only to certain regions.
 * You're restricted from selling certain variants in a country for legal or licensing reasons.
@@ -48,4 +48,4 @@ The shopper's country is read from Shopify's localisation. Make sure your store 
 
 ***
 
-**Need help?** If the variant isn't hidden for shoppers in the expected country, see [Troubleshooting](../troubleshooting.md) — check Shopify's localisation setup first. Still stuck? Open the in-app chat from your Camouflage dashboard.
+**Need help?** If the variant isn't hidden for shoppers in the expected country, see [Troubleshooting](../troubleshooting.md) - check Shopify's localisation setup first. Still stuck? Open the in-app chat from your Camouflage dashboard.
