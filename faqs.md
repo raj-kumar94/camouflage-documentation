@@ -1,4 +1,4 @@
-# FAQs
+# 🔎 FAQs
 
 {% hint style="info" %}
 Looking for a setup walkthrough? Start with the [Setup Guide](camouflage-setup-guide/basic-configuration.md). Working through a specific issue? See [Troubleshooting](troubleshooting.md).
