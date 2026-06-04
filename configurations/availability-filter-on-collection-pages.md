@@ -31,3 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 ```
+
+### CSS query to exclude some collections
+
+```css
+a[href*='/collections/']:not([href*='/collections/visors']):not([href*='/collections/high-noon-x-good-good-golf'])
+```
