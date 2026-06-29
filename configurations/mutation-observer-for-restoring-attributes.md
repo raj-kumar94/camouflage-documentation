@@ -1,37 +1,74 @@
 ---
 description: >-
-  On some themes/ third party apps, classes and attributes (eg:
-  '.hide-oos-disable') are removed from the variant picker upon re-render caused
-  by option change. This custom js restores those attributes
+  On some themes and third-party apps, classes and attributes (for example,
+  '.hide-oos-disable') are removed from the variant picker during re-renders
+  triggered by option changes. This custom JavaScript restores those
+  attributes and classes.
 ---
 
-# 🕵️‍♀️ Mutation Observer for restoring attributes
+# 🕵️‍♀️ Restoring Attributes with a MutationObserver
 
-Camouflage cannot implement its hiding / striking-through functionality without these attributes. This configuration restores those attributes/classes after the re-render. There are two ways to use this : \
-\
-(Both will be used in **custom js PDP**)
+Camouflage relies on these attributes and classes to implement its hiding and strike-through functionality. Some themes or third-party apps remove them during re-renders, causing the functionality to stop working.
 
-```javascript
-// 1. Use the definition provided on the window: 
-document.addEventListener('hoos:executed', (event) => {
-  const containerToObserve = event.detail.mainContainer; //event.detail.mainContainer.closest('.product-form--block');
-  window.CAMOUFLAGEE.observeContainerForRestoringAttributes(event.detail, containerToObserve);
-})
+This configuration restores the missing attributes and classes after each re-render.
+
+There are three ways to enable this:
+
+### 1. Enable the built-in MutationObserver
+
+```json
+{
+  "hide_oos_extras": {
+    "use_class_mutation_observer": true
+  }
+}
 ```
 
+### 2. Use the helper exposed by Camouflage
+
+Add the following code to **Custom JS (PDP)**.
+
 ```javascript
-// 2. If you want more control on the logic: 
+document.addEventListener('hoos:executed', (event) => {
+  const containerToObserve = event.detail.mainContainer;
+  // Example:
+  // const containerToObserve = event.detail.mainContainer.closest('.product-form--block');
+
+  window.CAMOUFLAGEE.observeContainerForRestoringAttributes(
+    event.detail,
+    containerToObserve
+  );
+});
+```
+
+### 3. Implement your own MutationObserver
+
+If you need full control over the observer logic, you can implement your own version.
+
+Add the following code to **Custom JS (PDP)**.
+
+```javascript
 const observeContainerForRestoringAttributes = (hoosObj) => {
-  // debugger;
-  let shouldDisableSoldOut = hoosObj.extras.disabled === true || ['hide', 'disable', 'strike-through-disabled'].includes(hoosObj.variant_action);
-  let shouldDisableMarkedUnavailable = true;
+  const shouldDisableSoldOut =
+    hoosObj.extras.disabled === true ||
+    ['hide', 'disable', 'strike-through-disabled'].includes(
+      hoosObj.variant_action
+    );
+
+  const shouldDisableMarkedUnavailable = true;
+
   function handleMutation(mutation) {
-    if (mutation.type !== 'attributes' || mutation.attributeName !== 'class') {
+    if (
+      mutation.type !== 'attributes' ||
+      mutation.attributeName !== 'class'
+    ) {
       return;
     }
 
     const target = mutation.target;
-    const oldClassList = mutation.oldValue ? mutation.oldValue.split(' ') : [];
+    const oldClassList = mutation.oldValue
+      ? mutation.oldValue.split(' ')
+      : [];
     const newClassList = Array.from(target.classList || []);
 
     const classesToCheck = [
@@ -40,24 +77,45 @@ const observeContainerForRestoringAttributes = (hoosObj) => {
       hoosObj.defaultUnavailableClass,
     ];
 
-    classesToCheck.forEach(checkClass => {
-      const wasRemoved = oldClassList.includes(checkClass) && !newClassList.includes(checkClass);
+    classesToCheck.forEach((checkClass) => {
+      const wasRemoved =
+        oldClassList.includes(checkClass) &&
+        !newClassList.includes(checkClass);
+
       if (!wasRemoved) {
         return;
       }
 
-      console.log("Camouflage", `Class ${checkClass} was removed from:`, target);
+      console.log(
+        'Camouflage',
+        `Class "${checkClass}" was removed from:`,
+        target
+      );
 
       const propertyName = checkClass.replace(/-/g, '_');
+
       if (target[propertyName] === true) {
-        console.log("Camouflage", `Restoring class ${checkClass} because the property is true`);
+        console.log(
+          'Camouflage',
+          `Restoring class "${checkClass}".`
+        );
+
         target.classList.add(checkClass);
+
         if (target.camouflage_disabled === true) {
-          if ((checkClass === hoosObj.defaultUnavailableClass) && shouldDisableSoldOut) {
+          if (
+            checkClass === hoosObj.defaultUnavailableClass &&
+            shouldDisableSoldOut
+          ) {
             target.disabled = true;
-          } else if ((checkClass === hoosObj.camouflageMarkedUnavailableClass) && shouldDisableMarkedUnavailable) {
+          } else if (
+            checkClass === hoosObj.camouflageMarkedUnavailableClass &&
+            shouldDisableMarkedUnavailable
+          ) {
             target.disabled = true;
-          } else if (checkClass === hoosObj.camouflageUnavailableClass) {
+          } else if (
+            checkClass === hoosObj.camouflageUnavailableClass
+          ) {
             target.disabled = true;
           }
         }
@@ -65,30 +123,23 @@ const observeContainerForRestoringAttributes = (hoosObj) => {
     });
   }
 
-  const observer = new MutationObserver(mutations => {
+  const observer = new MutationObserver((mutations) => {
     mutations.forEach(handleMutation);
   });
 
-  const config = {
+  observer.observe(hoosObj.mainContainer, {
     attributes: true,
     attributeOldValue: true,
     attributeFilter: ['class'],
     subtree: true,
-  };
+  });
 
-  const variantPicker = hoosObj.mainContainer;
-  console.log({variantPicker});
-  if (variantPicker) {
-    observer.observe(variantPicker, config);
-    console.log('MutationObserver started to track specific class removal');
-  } else {
-    console.log('variant-picker element not found, observer not started');
-  }
+  console.log(
+    'Camouflage: MutationObserver started. Tracking class removals.'
+  );
 };
 
-
 document.addEventListener('hoos:executed', (event) => {
-	const hoosObj = event.detail;
-  observeContainerForRestoringAttributes(hoosObj);
+  observeContainerForRestoringAttributes(event.detail);
 });
 ```
