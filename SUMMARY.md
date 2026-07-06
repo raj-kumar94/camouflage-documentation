@@ -6,6 +6,7 @@
 
 * [💡 What we do](overview/what-we-do.md)
 * [✨ Our Features](overview/our-features.md)
+* [🎬 Choosing what happens to sold-out variants](overview/choosing-a-sold-out-variant-action.md)
 
 ## Camouflage Setup Guide
 
@@ -29,6 +30,9 @@
 * [Hide sold out color swatches from Collection pages](popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md)
 * [Hide sold out variants from Quick views](popular-use-cases/hide-sold-out-variants-from-quick-views.md)
 * [Filter sold out variants from Collection pages](popular-use-cases/filter-sold-out-variants-from-collection-pages.md)
+* [🚀 Remove hidden variants from search & collections (Native Publishing)](popular-use-cases/remove-hidden-variants-from-search-and-collections.md)
+* [🛡️ Block hidden variants at checkout](popular-use-cases/block-hidden-variants-at-checkout.md)
+* [💲 Fix the "From" price on collection pages](popular-use-cases/fix-the-from-price-on-collection-pages.md)
 
 ## Fundamentals
 

@@ -112,7 +112,41 @@ Full walkthrough: [Hide specific variants regardless of inventory quantity](popu
 
 Camouflage marks the variant as sold-out for the storefront - it doesn't delete or modify the variant in Shopify. The variant still exists in your admin; it just doesn't appear in the picker for shoppers.
 
-One thing to keep in mind: the variant is still technically buyable via direct cart URL. If you have your variants exposed via a different surface (a search-results widget from another app, an external feed, etc.) and a shopper had previously added the variant to their cart, the order could still go through. We recommend not exposing in-stock variants in places where Camouflage doesn't run.
+One thing to keep in mind: the variant is still technically buyable via direct cart URL. If you have your variants exposed via a different surface (a search-results widget from another app, an external feed, etc.) and a shopper had previously added the variant to their cart, the order could still go through. To block those purchases too, enable [checkout validation](popular-use-cases/block-hidden-variants-at-checkout.md).
+
+</details>
+
+<details>
+
+<summary>Can shoppers still buy a hidden variant (direct links, saved carts, other channels)?</summary>
+
+By default, yes - Camouflage hides variants on your storefront, but a shopper who added the item to their cart earlier, follows a direct link, or comes through another sales channel (Google, Facebook, etc.) could still check out with it.
+
+To close that door, enable **checkout validation**: Camouflage then re-checks the cart at checkout and blocks the purchase of any variant your rules say should be hidden, with an error message.
+
+Setup guide: [Block hidden variants at checkout](popular-use-cases/block-hidden-variants-at-checkout.md).
+
+</details>
+
+<details>
+
+<summary>How quickly does Camouflage react to inventory changes?</summary>
+
+As soon as a variant sells out (or comes back in stock), Camouflage picks it up on the **next page load** - there's nothing to sync on our side, because Camouflage reads the product data Shopify already sends to the page.
+
+The only delay you might notice is Shopify's own page caching: after an inventory change, Shopify's CDN can serve the previous copy of a product page for roughly **2–5 minutes**. Shoppers loading the page after that see the updated picker. A hard refresh (`Cmd/Ctrl + Shift + R`) shows you the fresh state immediately.
+
+</details>
+
+<details>
+
+<summary>Does Camouflage work with Shopify Markets, multiple currencies and languages?</summary>
+
+Yes.
+
+* **Markets & country rules:** Camouflage's [country-based hiding](popular-use-cases/hide-specific-variants-based-on-countries.md) builds on Shopify Markets / localisation - you can hide variants for specific countries, use the `EU` shortcut for all EU countries, or hide from everyone *except* a region.
+* **Multiple currencies:** currency conversion is handled by Shopify as usual; features like the collection-page price fix respect the shopper's local pricing.
+* **Multiple languages:** Camouflage works on translated storefronts. If you use translated option values (e.g. *Couleur* instead of *Color*) and something doesn't hide correctly on one language, open the in-app chat - adding the translated names to your setup is a quick fix on our side.
 
 </details>
 
@@ -199,6 +233,23 @@ Three things to try in this order:
 3. **Confirm the app embed is still on** in your live theme (Themes → Customise → App embeds → Camouflage sold variants → toggle on → Save).
 
 If none of these fix it, see [Troubleshooting](troubleshooting.md).
+
+</details>
+
+<details>
+
+<summary>I marked a variant as hidden, but it's still visible on the product page.</summary>
+
+Run through this checklist - it catches nearly every case:
+
+1. **Hard-refresh the page** and wait 2–5 minutes - Shopify's CDN may still be serving the old copy.
+2. **Check the action you picked on the Setup page.** If it's *Strike-through*, *Disable* or *Append text*, the variant is supposed to stay visible - just unselectable. Only the *Hide* action removes it. See [Choosing what happens to sold-out variants](overview/choosing-a-sold-out-variant-action.md).
+3. **Confirm the app embed is on** in the theme you're looking at (Themes → Customise → App embeds → Camouflage sold variants → on → Save).
+4. **Confirm the Setup page's theme dropdown matches your current theme** - Camouflage's configuration depends on it.
+5. **Multi-option product on the free plan?** Products with 2–3 options (e.g. Color × Size) need the upgraded plan (14-day free trial).
+6. **Looking at a collection page or quick view?** Those surfaces have their own setup - the product-page rule alone doesn't cover them. See [collection swatches](popular-use-cases/hide-sold-out-color-swatches-from-collection-pages.md) and [quick views](popular-use-cases/hide-sold-out-variants-from-quick-views.md).
+
+Still showing? Open the in-app chat with the product link - we'll take it from there.
 
 </details>
 

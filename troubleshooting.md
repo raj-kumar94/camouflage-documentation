@@ -253,6 +253,35 @@ Your previous settings (theme name, action, exception tags, "always hide" varian
 
 ***
 
+## "A hidden variant can still be purchased"
+
+<details>
+
+<summary>The purchase came through a direct link, saved cart, or another sales channel</summary>
+
+Camouflage hides variants on your storefront pages. A shopper who added the variant to their cart **before** you hid it, followed a direct product/cart link, or bought through another channel (Google, Facebook, a buy button…) bypasses the storefront picker entirely.
+
+Fix: enable **checkout validation** so Camouflage re-checks the cart at checkout and blocks hidden variants there too.
+
+Setup guide: [Block hidden variants at checkout](popular-use-cases/block-hidden-variants-at-checkout.md).
+
+</details>
+
+<details>
+
+<summary>Checkout validation is on, but the purchase still went through</summary>
+
+Check two things on the [Hide specific variants](https://camouflage.codecrux.dev/hide-specific-variants) page in the Camouflage app:
+
+1. The **right validation** is enabled - *Checkout Validation* covers individually hidden variants and country rules; *Global variants validation* covers bulk rules (by title / SKU / option value). Click **Verify Activation** to confirm the badge shows **Enabled**.
+2. The rule that should hide the variant is actually **active** - if the variant was un-hidden (or the rule edited) shortly before the purchase, the change applies within a few minutes.
+
+If both look right and it still happened, open the in-app chat with the order number and product link - we'll investigate.
+
+</details>
+
+***
+
 ## Still stuck?
 
 * Read [FAQs](faqs.md) - most common questions are answered there.
