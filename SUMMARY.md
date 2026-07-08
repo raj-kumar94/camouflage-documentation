@@ -44,7 +44,7 @@
 
 * [Troubleshooting](troubleshooting.md)
 * [Glossary](glossary.md)
-* [FAQs](faqs.md)
+* [🔎 FAQs](faqs.md)
 
 ## Configurations
 
