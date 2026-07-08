@@ -44,7 +44,7 @@ Use this when you want to give VIPs access to a specific colour / size on one sp
 
 1. Go to the Camouflage app → `Hide specific variants` page → `Select variants individually` tab.
 2. Search for the product.
-3. Click the **"Select variants"** button.
+3. Click the **"Manage variants"** button.
 4. Select the variants you want to make tag-exclusive.
 5. Click **"Hide from countries"** - yes, the same flow handles customer tags too. (The label will likely be expanded to also mention customer tags in the next UI revision.)
 6. In the modal, find the **Customer tags** field. Enter the tag (e.g. `VIP`).

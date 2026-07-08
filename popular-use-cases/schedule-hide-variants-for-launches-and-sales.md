@@ -9,6 +9,8 @@ description: >-
 
 Schedule a from-and-to date window during which a specific variant should be hidden. Outside the window, the variant behaves normally. No manual flip required.
 
+<figure><img src="../.gitbook/assets/diagram-schedule-hide-timeline.svg" alt="A timeline showing a Christmas Red variant: visible before Nov 1, hidden between the From (Nov 1) and To (Dec 31) markers, and visible again afterwards - all automatic."><figcaption>Set a From and To date; Camouflage hides the variant inside the window and restores it after, on your store's clock.</figcaption></figure>
+
 Real-world scenarios:
 
 * **Seasonal colours.** "Christmas Red" should only be visible from Nov 1 → Dec 31. Hide it the rest of the year.
@@ -27,7 +29,7 @@ Real-world scenarios:
 
 1. Go to the Camouflage app → `Hide specific variants` page → `Select variants individually` tab.
 2. Search for the product.
-3. Click the **"Select variants"** button.
+3. Click the **"Manage variants"** button.
 4. Select the variants you want to hide on a schedule.
 5. Click **"Schedule hide"** (sibling to "Always hide" and "Hide from countries").
 6. Enter a **From** date / time and a **To** date / time. Both are required.
@@ -63,6 +65,18 @@ You want a variant **visible only** during the sale.
 * Set From to the cut-off date / time.
 * Set To far in the future (e.g. `2099-01-01`).
 
+## Also remove scheduled variants from search & collections
+
+By default a scheduled hide works the same way as the rest of Camouflage: the variant disappears from the product page during the window. Shopify still counts it as published, though, so it can still surface in storefront search, collection filters, and any other sales channels.
+
+If you have **Native Publishing** turned on, scheduled hides are covered too. When a window starts, Camouflage unpublishes the variant from the sales channels you manage, and when the window ends it publishes the variant right back. So a "Black Friday Bundle" that is scheduled to hide after Cyber Monday will also drop out of search and collections at that moment, and reappear on your next scheduled window with no manual step.
+
+{% hint style="info" %}
+The channel change happens automatically around your **From** and **To** times. The product page hiding is still instant either way; Native Publishing is what also clears the variant from search, filters, and other channels during the window.
+{% endhint %}
+
+See [Remove hidden variants from search & collections](remove-hidden-variants-from-search-and-collections.md) to turn this on and pick which channels it manages.
+
 ## Make the hidden variants visible again
 
 You have two ways to revert:
@@ -85,5 +99,6 @@ Schedule rules layer with all the other "Hide specific variants" features. Examp
 * [Hide specific variants regardless of inventory quantity](hide-specific-variants-regardless-of-inventory-quantity.md) - for permanent hides
 * [Hide specific variants based on countries](hide-specific-variants-based-on-countries.md) - country-aware hiding
 * [Hide variants in bulk regardless of inventory quantity](hide-variants-in-bulk-regardless-of-inventory-quantity.md) - apply a rule to many products at once
+* [Remove hidden variants from search & collections](remove-hidden-variants-from-search-and-collections.md) - also clear scheduled variants from search, filters and other channels during the window
 
 **Need help?** If the schedule isn't behaving the way you expect, double-check Shopify's store timezone first. If that looks right, see [Troubleshooting](../troubleshooting.md) or open the in-app chat from your Camouflage dashboard.

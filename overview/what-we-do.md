@@ -12,6 +12,8 @@ Camouflage
 
 The frustration of clicking on a product only to find the variant is sold out? Customers hate it, and it can hurt your Shopify store's user experience.
 
+<figure><img src="../.gitbook/assets/diagram-before-after-hide.svg" alt="Before Camouflage, a sold-out XL size stays clickable and leads to a dead end; with Camouflage it's hidden so only buyable sizes show."><figcaption>Camouflage removes the dead-end options, so every choice a shopper can make is one they can buy.</figcaption></figure>
+
 Camouflage gives you complete control over your Shopify variants like hide, disable, or strike-through variants based on stock, inventory levels, customer location, tags, and custom conditions. You can seamlessly manage variant visibility across product pages, quick views, collections pages, home page and custom themes while staying compatible with popular third-party apps. This cleans up your product pages, and enhances the buying experience.
 
 No more wasted clicks. No more frustration. Just a smoother, more efficient shopping journey for everyone. \

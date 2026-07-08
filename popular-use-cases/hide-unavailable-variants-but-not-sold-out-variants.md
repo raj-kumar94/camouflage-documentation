@@ -9,6 +9,8 @@ This trips a lot of merchants up - they sound the same, but Shopify treats them 
 
 Unavailable variants only happen when a product has **two or more option axes** (e.g. Size *and* Color).
 
+<figure><img src="../.gitbook/assets/diagram-soldout-vs-unavailable.svg" alt="A Color x Size grid: Red/M is sold out (exists, 0 stock) while Blue/M is unavailable (never created). Both look clickable to a shopper but Camouflage can treat them separately."><figcaption>Sold-out variants exist in your admin at zero stock; unavailable ones were never created. Camouflage can treat them separately.</figcaption></figure>
+
 ### Example
 
 You sell t-shirts with the following set up in admin:

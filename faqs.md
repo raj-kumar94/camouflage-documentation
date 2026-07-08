@@ -98,7 +98,7 @@ See: [Hide Unavailable variants but not sold-out variants](popular-use-cases/hid
 
 <summary>How do I hide specific variants of a product?</summary>
 
-After the basic setup is done on the Setup page, go to the [Hide specific variants](https://camouflage.codecrux.dev/hide-specific-variants?tab=individual) page. Search for the product, click **Select Variants**, pick the variants you want hidden, and click **Always hide**.
+After the basic setup is done on the Setup page, go to the [Hide specific variants](https://camouflage.codecrux.dev/hide-specific-variants?tab=individual) page. Search for the product, click **Manage Variants**, pick the variants you want hidden, and click **Always hide**.
 
 To unhide: select those variants, click the 3 dots near the action buttons, then click **Undo always hide**.
 

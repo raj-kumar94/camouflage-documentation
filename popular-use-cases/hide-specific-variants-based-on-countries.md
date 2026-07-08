@@ -24,7 +24,7 @@ The shopper's country is read from Shopify's localisation. Make sure your store 
 
 1. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
 2. Search for a product
-3. Click on the **"Select variants"** button
+3. Click on the **"Manage variants"** button
 4.  Select variants to hide and click "Hide from countries"<br>
 
     <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +41,7 @@ The shopper's country is read from Shopify's localisation. Make sure your store 
 
 1. Go to the Camouflage app -> `Hide specific variants` page -> `Select variants individually` tab
 2. Search for a product
-3. Click on **"Select variants"** button
+3. Click on **"Manage variants"** button
 4. Select the variants to show again. Hidden variants will display a "Hidden in" badge next to them
 5. Click on 3 dots at the top right corner to expand more actions
 6. Click **"Undo hide from countries"**

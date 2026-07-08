@@ -40,6 +40,15 @@ Customer-facing GitBook for the Camouflage Shopify app, git-synced with GitBook.
 - Images live in `.gitbook/assets/`; text-only pages are acceptable when no screenshot exists yet.
 - Define jargon on first use or link the glossary (sold-out vs unavailable distinction matters — see `popular-use-cases/hide-unavailable-variants-but-not-sold-out-variants.md`).
 
+## Tutorials & visuals
+
+- **Start from the template**: `references/tutorial-template.md` (lives in this skill, never published). Fixed order: description frontmatter → what & when + real-world scenarios → hero visual → before-you-start → numbered steps (one shot per step) → worked example → variations + cross-links → support escape hatch. The `schedule-hide` and `hide-unavailable` pages are the reference implementations.
+- **Two-track visual strategy** — pick per page:
+  - **Track A — screenshots** (UI walkthroughs). Never hand-capture ad-hoc; drive the admin with `scripts/capture-docs-shots.mjs` (Playwright, fixed 1440×900 @2x, numbered badges that match step numbers). See `scripts/README.md`. Output lands in `.gitbook/assets/`.
+  - **Track B — diagrams** (concepts: before/after, state distinctions, timelines, decision matrices). Inline SVG in `.gitbook/assets/`, no live store needed — the fastest win for concept pages. Match the admin's **Polaris palette**: green `#008060`, red `#d72c0d`, text `#202223`, muted `#6d7175`, border `#e1e3e5`. Existing set: `diagram-before-after-hide.svg`, `diagram-soldout-vs-unavailable.svg`, `diagram-schedule-hide-timeline.svg`, `diagram-variant-action-choices.svg`. Verify an SVG renders (`qlmanage -t -s 900 -o <dir> file.svg`) before wiring it in.
+- **Embed convention**: `<figure><img src="../.gitbook/assets/NAME" alt="describe for screen readers + load failures"><figcaption>one-line takeaway</figcaption></figure>`. Always write real `alt` text and a caption — the existing `alt=""` shots are the pattern to *stop* following.
+- **Name assets meaningfully**: `diagram-*` for illustrations, `<flow>-step<N>-*` for screenshots. Never `image (42).png` — that convention is unmaintainable and stale shots become unfindable.
+
 ## Source of truth for technical claims
 
 The app code is in the sibling repo `../camouflage-app` (skills at `../camouflage-app/.claude/skills/`). Verify feature behavior there before documenting it — do not guess timings, key names, or behaviors. Storefront config keys come from `app-extensions/storefront/base/global-typedefs.js`.

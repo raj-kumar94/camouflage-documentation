@@ -33,6 +33,8 @@ Quick reference for the terms you'll see across this documentation. Skim it once
 
 See: [Hide Unavailable variants but not sold-out variants](popular-use-cases/hide-unavailable-variants-but-not-sold-out-variants.md).
 
+<figure><img src=".gitbook/assets/diagram-soldout-vs-unavailable.svg" alt="A Color x Size grid showing the difference between a sold-out variant (exists, 0 stock) and an unavailable variant (never created)."><figcaption>Sold out vs. unavailable - the distinction that trips up most merchants.</figcaption></figure>
+
 **Always-hide variant** - A variant you've manually marked to stay hidden regardless of its inventory. Useful for seasonal products, samples, or items you don't want to sell online for a while.
 
 See: [Hide specific variants regardless of inventory quantity](popular-use-cases/hide-specific-variants-regardless-of-inventory-quantity.md).

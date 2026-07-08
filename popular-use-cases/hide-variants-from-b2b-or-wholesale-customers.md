@@ -36,7 +36,7 @@ You can list multiple tags. `-B2B, -Wholesale` means "hide from anyone with `B2B
 
 1. Go to the Camouflage app → `Hide specific variants` page → `Select variants individually` tab.
 2. Search for the product.
-3. Click the **"Select variants"** button.
+3. Click the **"Manage variants"** button.
 4. Select the variant(s) you want to block from B2B / wholesale.
 5. Click **"Hide from countries"** (same flow handles customer tags).
 6. Find the **Customer tags** field. Enter the tag with a minus prefix, e.g. `-B2B`.

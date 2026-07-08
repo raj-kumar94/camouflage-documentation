@@ -29,6 +29,7 @@ Native Publishing works on the variants you hide from the **Hide specific varian
 | --- | --- |
 | Picking them individually per product ("Always hide") | ✅ Applied when you save |
 | Catalog-wide rules (by option value, variant title, or SKU) | ✅ Applied during the regular sync passes |
+| Scheduling them for a date/time window ("Schedule hide") | ✅ Removed when the window starts, restored when it ends |
 
 ## Before you start
 
@@ -62,6 +63,7 @@ You can also override the channels for a single product while hiding its variant
 
 * **Individual picks apply immediately.** Hide a variant, hit Save, and it comes off your selected channels right away.
 * **Catalog-wide rules are applied by the sync passes.** On a large catalog, give it a few minutes.
+* **Scheduled hides sync on time.** A variant on a schedule comes off your channels around its **From** time and goes back on around its **To** time, automatically. If you edit or remove a schedule, the change is reflected right away.
 * **Camouflage only republishes what it unpublished.** If you unpublished a product from a channel yourself, Camouflage will never sneak it back on. It keeps track of exactly which channels it removed each variant from, and restores only those.
 
 ## Pausing and turning it off

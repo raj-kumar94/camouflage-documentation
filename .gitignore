@@ -1,0 +1,3 @@
+# Docs tooling — never commit the saved admin session or local Playwright installs
+scripts/.auth.json
+node_modules/
