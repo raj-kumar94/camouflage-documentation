@@ -25,11 +25,11 @@ Nothing is ever deleted. Unpublished variants stay safely in your Shopify admin 
 
 Native Publishing works on the variants you hide from the **Hide specific variants** page:
 
-| You hide variants by... | Synced to sales channels |
-| --- | --- |
-| Picking them individually per product ("Always hide") | ✅ Applied when you save |
-| Catalog-wide rules (by option value, variant title, or SKU) | ✅ Applied during the regular sync passes |
-| Scheduling them for a date/time window ("Schedule hide") | ✅ Removed when the window starts, restored when it ends |
+| You hide variants by...                                     | Synced to sales channels                                |
+| ----------------------------------------------------------- | ------------------------------------------------------- |
+| Picking them individually per product ("Always hide")       | ✅ Applied when you save                                 |
+| Catalog-wide rules (by option value, variant title, or SKU) | ✅ Applied during the regular sync passes                |
+| Scheduling them for a date/time window ("Schedule hide")    | ✅ Removed when the window starts, restored when it ends |
 
 ## Before you start
 
@@ -70,7 +70,7 @@ You can also override the channels for a single product while hiding its variant
 
 * **Pause** (on the **Advance setup** tab) stops all syncing but keeps everything exactly as it is - hidden variants stay hidden, settings stay saved. Resume whenever you like.
 * **Unticking the box** on the Hide specific variants page stops Camouflage from syncing your picks and rules going forward. Variants that are already unpublished stay that way for the moment.
-* Want everything **republished right away**? Open the in-app chat and we will run a full revert for you - it restores every variant to the channels it was on before Camouflage stepped in.
+* Want everything **republished right away**? Open the in-app chat and we will run a full revert for you. It restores every variant to the channels it was on before Camouflage stepped in.
 
 {% hint style="warning" %}
 Planning to uninstall Camouflage? Message us first so we can revert your channels. After the app is removed we can no longer republish variants on your behalf.
