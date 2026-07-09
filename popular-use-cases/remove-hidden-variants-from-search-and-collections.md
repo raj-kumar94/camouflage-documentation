@@ -41,16 +41,22 @@ Native Publishing works on the variants you hide from the **Hide specific varian
 
 1. Open the [**Hide specific variants**](https://camouflage.codecrux.dev/hide-specific-variants) page in the Camouflage app.
 2. Tick the **Native publishing** box (it sits right next to **Hide only specifically selected variants**).
+<figure><img src = "../.gitbook/assets/nat-pub-checbox-HSVtab.png"><figcaption></figcaption></figure>
+
 3. If Shopify asks for the extra permission, approve it. You will land back in the app - tick the box once more and you are done.
+
 
 You can also manage it from the **Setup** page, under the **Advance setup** tab, where the full **Native publishing** card lives (channels, sync options, and pause).
 
 ## Choosing your sales channels
 
 Next to the **Native publishing** checkbox you will see a small channels button showing something like `1/2`. That is how many of your sales channels Camouflage is managing. Click it to open the picker.
+<figure><img src = "../.gitbook/assets/nat-pub-sales-channels-count.png"><figcaption></figcaption></figure>
 
 * **Online Store** is selected by default.
 * Tick any additional channels you want Camouflage to manage, then press **Save**.
+<figure><img src = "../.gitbook/assets/nat-pub-channel-selection.png"><figcaption></figcaption></figure>
+
 * If the button shows `0` selected, Camouflage manages nothing - the feature is effectively idle until you pick at least one channel.
 
 {% hint style="warning" %}
@@ -58,6 +64,9 @@ Next to the **Native publishing** checkbox you will see a small channels button 
 {% endhint %}
 
 You can also override the channels for a single product while hiding its variants - handy when one product should disappear from Google but stay on your Online Store.
+
+<figure><img src = "../.gitbook/assets/individual-variant-channel-selection.png"><figcaption></figcaption></figure>
+
 
 ## How it behaves day to day
 
@@ -73,7 +82,7 @@ You can also override the channels for a single product while hiding its variant
 * Want everything **republished right away**? Open the in-app chat and we will run a full revert for you. It restores every variant to the channels it was on before Camouflage stepped in.
 
 {% hint style="warning" %}
-Planning to uninstall Camouflage? Message us first so we can revert your channels. After the app is removed we can no longer republish variants on your behalf.
+**Planning to uninstall Camouflage?** Message us first so we can revert your channels. After the app is removed we can no longer republish variants on your behalf.
 {% endhint %}
 
 ## A note on checkout
