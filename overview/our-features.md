@@ -39,29 +39,41 @@ Open each tab below to see what happens to a single variant (`Large / Red`) acro
 {% endtab %}
 
 {% tab title="Schedule hide" %}
-**Hidden on a timer.** Behaves exactly like Always hide, but only between the start and end times you set. Turn on native publishing to also unpublish the variant for the duration of the window, then it is republished automatically when the window ends.
+**Hidden on a timer.** Behaves exactly like Always hide, but only between the start and end times you set. Outside the window the variant is fully visible again.
 
-<figure><img src="../.gitbook/assets/hiding-04-schedule-hide.png" alt="Store map for Schedule hide: same as Always hide during the scheduled window, hidden where Camouflage runs and blocked at checkout, still visible in search and other channels."></figure>
+<figure><img src="../.gitbook/assets/hiding-04-schedule-hide.png" alt="Store map for Schedule hide: during the scheduled window the variant is hidden where Camouflage runs and blocked at checkout, and still visible in search and other channels."></figure>
+{% endtab %}
+
+{% tab title="Schedule hide + unpublishing" %}
+**Removed on a timer.** With native publishing turned on, the variant is unpublished from the sales channels you pick when the window starts, so it also leaves search, filters and collections. It is republished automatically when the window ends.
+
+<figure><img src="../.gitbook/assets/hiding-05-schedule-hide-unpublish.png" alt="Store map for Schedule hide with native publishing on: during the window the variant is Removed from product pages, swatches, quick view, featured products, search, filters and other channels; checkout is blocked; markets and B2B stay visible."></figure>
 {% endtab %}
 
 {% tab title="Hide from countries" %}
 **Hidden for some shoppers.** Hidden only for shoppers in the countries you choose, based on their market or your store's country switcher, not their physical location. Everyone else sees the variant normally, and nothing is unpublished.
 
-<figure><img src="../.gitbook/assets/hiding-05-hide-countries.png" alt="Store map for Hide from countries: product page, swatches, quick view and featured products show Some shoppers only; every other surface stays visible."></figure>
+<figure><img src="../.gitbook/assets/hiding-06-hide-countries.png" alt="Store map for Hide from countries: product page, swatches, quick view and featured products show Some shoppers only; every other surface stays visible."></figure>
 {% endtab %}
 
 {% tab title="Unpublish from markets" %}
 **Removed from selected markets.** Unpublished from the market catalogs you choose, so the variant disappears from search, collections and product pages in those markets. Your primary market and other channels are unaffected.
 
-<figure><img src="../.gitbook/assets/hiding-06-unpublish-markets.png" alt="Store map for Unpublish from markets: International markets shows Removed; every other surface, including the online store and B2B, stays visible."></figure>
+<figure><img src="../.gitbook/assets/hiding-07-unpublish-markets.png" alt="Store map for Unpublish from markets: International markets shows Removed; every other surface, including the online store and B2B, stays visible."></figure>
 {% endtab %}
 
 {% tab title="Unpublish from B2B" %}
 **Removed from selected B2B catalogs.** Unpublished from the B2B catalogs you choose, so those wholesale buyers no longer see it. Your retail Online Store is unaffected.
 
-<figure><img src="../.gitbook/assets/hiding-07-unpublish-b2b.png" alt="Store map for Unpublish from B2B: B2B catalogs shows Removed; every other surface, including the online store and markets, stays visible."></figure>
+<figure><img src="../.gitbook/assets/hiding-08-unpublish-b2b.png" alt="Store map for Unpublish from B2B: B2B catalogs shows Removed; every other surface, including the online store and markets, stays visible."></figure>
 {% endtab %}
 {% endtabs %}
+
+#### Side by side
+
+The same options at a glance, showing where a variant ends up on each part of your store:
+
+<figure><img src="../.gitbook/assets/hiding-side-by-side.png" alt="Comparison table of every hiding option across five columns: Product page & swatches, Search & filters, Checkout, Other channels, and Markets / B2B. Always hide (conceal) is hidden on the product page, visible in search and other channels, and blocked at checkout. Always hide (unpublish) is removed everywhere except markets and B2B. Always show is visible everywhere. Schedule hide matches Always hide during the window. Hide from countries shows some shoppers only on the product page. Unpublish from markets and Unpublish from B2B are removed only from those catalogs."><figcaption>Where a variant ends up for each hiding option.</figcaption></figure>
 
 **Want to try it yourself?** Open the interactive version and click through every option:
 
