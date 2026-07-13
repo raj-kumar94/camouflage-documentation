@@ -13,6 +13,16 @@
 * Hide variants from specific Shopify Markets or B2B catalogs, without affecting the rest of your store.
 * Works with Customised themes and third party app integrations like Swatch King, Pagefly, Globo Swatch etc.<br>
 
+### See what each hiding option does
+
+Camouflage can hide a variant in two different ways: **conceal** it on your storefront (where your customers browse), or **unpublish** it from a sales channel, market or catalog. Knowing which one you're using tells you exactly where the variant disappears from, and where it stays visible.
+
+Pick any option in the interactive guide below and watch what happens to a single variant across your store.
+
+{% embed url="https://raj-kumar94.github.io/camouflage-documentation/hiding-options-explainer.html" %}
+Interactive guide: what happens to a variant for each hiding option
+{% endembed %}
+
 ### Disable or strike-through sold out options
 
 {% embed url="https://cdn.shopify.com/app-store/listing_images/07ce2543b0ebd7ba405a9ac0996f9b95/desktop_screenshot/CP3ywvaAgvsCEAE=.png?height=1800&width=3200" %}
