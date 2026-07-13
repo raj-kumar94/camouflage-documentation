@@ -19,7 +19,7 @@ Camouflage can hide a variant in two different ways: **conceal** it on your stor
 
 Pick any option in the interactive guide below and watch what happens to a single variant across your store.
 
-{% embed url="https://raj-kumar94.github.io/camouflage-documentation/hiding-options-explainer.html" %}
+{% embed url="https://raj-kumar94.github.io/camouflage-documentation/hiding-options-embed.html" %}
 Interactive guide: what happens to a variant for each hiding option
 {% endembed %}
 
