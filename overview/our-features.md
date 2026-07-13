@@ -1,6 +1,6 @@
 # ✨ Our Features
 
-#### With Camouflage, you can:<br>
+Camouflage gives you precise control over which variants shoppers can see, and where. **With Camouflage, you can:**
 
 * Hide, disable, strike-through or un-publish sold-out variants.
 * Schedule Hide variants based on Date and Time
@@ -13,9 +13,9 @@
 * Hide variants from specific Shopify Markets or B2B catalogs, without affecting the rest of your store.
 * Works with Customised themes and third party app integrations like Swatch King, Pagefly, Globo Swatch etc.<br>
 
-### See what each hiding option does
+## Ways to hide a variant
 
-Camouflage can hide a variant in two different ways: **conceal** it on your storefront (where your customers browse), or **unpublish** it from a sales channel, market or catalog. Knowing which one you're using tells you exactly where the variant disappears from, and where it stays visible.
+Camouflage gives you several hiding options, and they work in one of two ways: they either **conceal** a variant on your storefront (where your customers browse), or **unpublish** it from a sales channel, market or catalog. Knowing which one an option uses tells you exactly where the variant disappears from, and where it stays visible.
 
 Open each tab below to see what happens to a single variant (`Large / Red`) across your store:
 
@@ -69,17 +69,23 @@ Open each tab below to see what happens to a single variant (`Large / Red`) acro
 {% endtab %}
 {% endtabs %}
 
-#### Side by side
+### Every option compared
 
 The same options at a glance, showing where a variant ends up on each part of your store:
 
 <figure><img src="../.gitbook/assets/hiding-side-by-side.png" alt="Comparison table of every hiding option across five columns: Product page & swatches, Search & filters, Checkout, Other channels, and Markets / B2B. Always hide (conceal) is hidden on the product page, visible in search and other channels, and blocked at checkout. Always hide (unpublish) is removed everywhere except markets and B2B. Always show is visible everywhere. Schedule hide matches Always hide during the window. Hide from countries shows some shoppers only on the product page. Unpublish from markets and Unpublish from B2B are removed only from those catalogs."><figcaption>Where a variant ends up for each hiding option.</figcaption></figure>
 
-**Want to try it yourself?** Open the interactive version and click through every option:
+### Try it yourself
+
+Open the interactive version and click through every option to see the change in real time:
 
 {% embed url="https://raj-kumar94.github.io/camouflage-documentation/hiding-options-embed.html" %}
 Interactive guide: what happens to a variant for each hiding option
 {% endembed %}
+
+## Variant picker results
+
+When a variant is sold out, Camouflage controls how it appears in your theme's variant picker. Pick the style that fits your store:
 
 ### Disable or strike-through sold out options
 
