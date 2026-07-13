@@ -8,6 +8,7 @@ Looking for a setup walkthrough? Start with the [Setup Guide](camouflage-setup-g
 
 * [🚀 Getting started](#getting-started)
 * [🧩 Variants & options](#variants-and-options)
+* [📡 Native Publishing (search & collections)](#native-publishing)
 * [🔧 Something's not working](#something-s-not-working)
 * [📌 Quick views, featured products & multiple themes](#quick-views-featured-products-and-multiple-themes)
 * [🔒 Privacy, performance & SEO](#privacy-performance-and-seo)
@@ -145,6 +146,7 @@ The only delay you might notice is Shopify's own page caching: after an inventor
 Yes.
 
 * **Markets & country rules:** Camouflage's [country-based hiding](popular-use-cases/hide-specific-variants-based-on-countries.md) builds on Shopify Markets / localisation - you can hide variants for specific countries, use the `EU` shortcut for all EU countries, or hide from everyone *except* a region.
+* **Hiding from a whole market or B2B catalog:** you can also [unpublish specific variants from a market or B2B catalog](popular-use-cases/hide-variants-from-markets-or-b2b-catalogs.md) entirely, so they disappear from search, filters and product pages there - not just on the page.
 * **Multiple currencies:** currency conversion is handled by Shopify as usual; features like the collection-page price fix respect the shopper's local pricing.
 * **Multiple languages:** Camouflage works on translated storefronts. If you use translated option values (e.g. *Couleur* instead of *Color*) and something doesn't hide correctly on one language, open the in-app chat - adding the translated names to your setup is a quick fix on our side.
 
@@ -161,6 +163,86 @@ Yes.
 [Live demo](https://camouflage-demo.myshopify.com/collections/all?filter.v.availability=1) (password: `camouflage`)
 
 Full walkthrough: [Filter sold out variants from Collection pages](popular-use-cases/filter-sold-out-variants-from-collection-pages.md).
+
+</details>
+
+***
+
+## 📡 Native Publishing (search & collections) <a href="#native-publishing" id="native-publishing"></a>
+
+<details>
+
+<summary>What is Native Publishing?</summary>
+
+Normal Camouflage hiding removes a variant from the picker on the **product page**. The variant can still turn up in search results, collection filters and collection pages.
+
+**Native Publishing** goes one step further: it **unpublishes** the hidden variant from your sales channels, so it also disappears from search, filters and collection pages - not just the product page. The moment that variant is back in stock (or allowed again by your rules), Camouflage **republishes** it automatically.
+
+Nothing is deleted and everything is reversible. You manage it all from the **Publishing** page in the Camouflage app.
+
+Full walkthrough: [Remove hidden variants from search & collections](popular-use-cases/remove-hidden-variants-from-search-and-collections.md).
+
+</details>
+
+<details>
+
+<summary>How do I turn on Native Publishing?</summary>
+
+1. Open the Camouflage app → **Publishing** page → **Settings** tab.
+2. Turn the main **Publishing** switch on. The first time, Shopify asks you to approve a sales-channel permission - it takes a few seconds.
+3. Pick which **sales channels** Camouflage may unpublish from.
+4. Choose which of your hide rules should **also unpublish** (always-hide picks, store-wide rules, and scheduled hides).
+
+Camouflage then keeps your channels in sync automatically. How many products it auto-manages, and which channels and catalogs it can reach, depend on your plan - see the table below.
+
+</details>
+
+<details>
+
+<summary>Which plan do I need, and what are the limits?</summary>
+
+Native Publishing works on **every plan**. What changes is how far it reaches:
+
+| Plan       | Auto-unpublish up to | Sales channels        | Markets & B2B catalogs |
+| ---------- | -------------------- | --------------------- | ---------------------- |
+| Free       | 100 products         | Online Store only     | -                      |
+| Basic      | 1,000 products       | Online Store + others | -                      |
+| Pro        | 5,000 products       | Online Store + others | ✅                      |
+| Enterprise | 20,000 products      | Online Store + others | ✅                      |
+
+If you go past your plan's product limit, those extra variants are **still hidden on your storefront** - they just aren't taken off your sales channels, and you'll see an upgrade prompt. Nothing breaks; you only lose the sales-channel step for the products above the limit. [Compare plans](https://camouflage.codecrux.dev/upgrade).
+
+</details>
+
+<details>
+
+<summary>Can I unpublish variants from a specific market or B2B catalog?</summary>
+
+Yes, on the **Pro plan and above**. As well as your normal sales channels, Camouflage can unpublish specific variants from a **Shopify Market** or a **B2B / wholesale catalog** entirely - so they disappear from search, filters and product pages there, without affecting the rest of your store.
+
+Full walkthrough: [Hide variants from specific markets or B2B catalogs](popular-use-cases/hide-variants-from-markets-or-b2b-catalogs.md).
+
+</details>
+
+<details>
+
+<summary>Where can I see what was published or unpublished, and why?</summary>
+
+Every publish and unpublish is recorded. Open the **Publishing** page → **Publishing history** tab and search by product, SKU or variant id. Each entry shows exactly what changed, when, on which channel, and which rule caused it.
+
+The **Activity** tab on the same page shows the bigger tasks Camouflage ran - syncs, cleanups, reports and undos.
+
+</details>
+
+<details>
+
+<summary>Can I pause or undo Native Publishing? Is anything deleted?</summary>
+
+Nothing is ever deleted - it's all reversible.
+
+* **Pause** it any time from **Publishing → Settings**. Your variants stay exactly as they are; resuming catches everything up in one sync.
+* **Turn Publishing off** to freeze everything in place - nothing gets republished or unpublished.
+* Use **Undo everything** to republish every variant Camouflage ever unpublished. You get a preview of exactly what will change before anything happens.
 
 </details>
 

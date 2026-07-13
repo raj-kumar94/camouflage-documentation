@@ -33,6 +33,7 @@
 * [Removing sold-out product cards from collections](configurations/removing-sold-out-product-cards-from-collections.md)
 * [Swapping product card images with available variants](configurations/swapping-product-card-images-with-available-variants.md)
 * [🚀 Remove hidden variants from search & collections (Native Publishing)](popular-use-cases/remove-hidden-variants-from-search-and-collections.md)
+* [🌍 Hide variants from specific markets or B2B catalogs](popular-use-cases/hide-variants-from-markets-or-b2b-catalogs.md)
 * [🛡️ Block hidden variants at checkout](popular-use-cases/block-hidden-variants-at-checkout.md)
 * [💲 Fix the "From" price on collection pages](popular-use-cases/fix-the-from-price-on-collection-pages.md)
 

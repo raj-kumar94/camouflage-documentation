@@ -10,6 +10,7 @@
 * Set conditions to hide variants based on countries, customer tags, and more which makes it perfect for both quick views and collection pages.
 * Helps you hide variants in Quick Views, Home Page, Collection Pages, and Custom Pages.
 * Unpublish variants from different sales channels.
+* Hide variants from specific Shopify Markets or B2B catalogs, without affecting the rest of your store.
 * Works with Customised themes and third party app integrations like Swatch King, Pagefly, Globo Swatch etc.<br>
 
 ### Disable or strike-through sold out options

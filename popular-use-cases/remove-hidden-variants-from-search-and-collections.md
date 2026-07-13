@@ -33,8 +33,16 @@ Native Publishing works on the variants you hide from the **Hide specific varian
 
 ## Before you start
 
-* Native Publishing is available on **paid plans**.
-* It currently supports stores with up to about **5,000 products**. Bigger catalog? Message us - we onboard larger stores individually.
+* **Every plan can use Native Publishing** - what changes between plans is how many products it auto-manages and which channels it can reach:
+
+| Plan       | Auto-unpublish up to | Sales channels        | Markets & B2B catalogs |
+| ---------- | -------------------- | --------------------- | ---------------------- |
+| Free       | 100 products         | Online Store only     | -                      |
+| Basic      | 1,000 products       | Online Store + others | -                      |
+| Pro        | 5,000 products       | Online Store + others | ✅                      |
+| Enterprise | 20,000 products      | Online Store + others | ✅                      |
+
+* Past your plan's product limit, those variants are still **hidden on your storefront** (the product page keeps working exactly as before) - they just aren't taken off your sales channels, and you'll see an upgrade prompt. [Compare plans](https://camouflage.codecrux.dev/upgrade).
 * The first time you turn it on, Shopify will ask you to approve an **extra permission** so Camouflage is allowed to manage publishing. One click, one time.
 
 ## How to turn it on
@@ -79,7 +87,7 @@ You can also override the channels for a single product while hiding its variant
 
 * **Pause** (on the **Advance setup** tab) stops all syncing but keeps everything exactly as it is - hidden variants stay hidden, settings stay saved. Resume whenever you like.
 * **Unticking the box** on the Hide specific variants page stops Camouflage from syncing your picks and rules going forward. Variants that are already unpublished stay that way for the moment.
-* Want everything **republished right away**? Open the in-app chat and we will run a full revert for you. It restores every variant to the channels it was on before Camouflage stepped in.
+* Want everything **republished right away**? Open the **[Publishing](https://camouflage.codecrux.dev/publishing)** page, go to the **Settings** tab, and run **Undo everything**. It previews the change first, then restores every variant to the channels it was on before Camouflage stepped in - only the ones Camouflage removed.
 
 {% hint style="warning" %}
 **Planning to uninstall Camouflage?** Message us first so we can revert your channels. After the app is removed we can no longer republish variants on your behalf.
@@ -126,5 +134,13 @@ No, it works on top of it. Page-level hiding reacts instantly in the shopper's b
 Native Publishing is a paid-plan feature. If you are on the free plan you will see an upgrade link next to the checkbox.
 
 </details>
+
+## Going further: markets & B2B catalogs
+
+Native Publishing also powers a more targeted form of hiding: unpublishing specific variants from a single Shopify **Market** or **B2B catalog**, while every other market and channel keeps selling them.
+
+{% content-ref url="hide-variants-from-markets-or-b2b-catalogs.md" %}
+[hide-variants-from-markets-or-b2b-catalogs.md](hide-variants-from-markets-or-b2b-catalogs.md)
+{% endcontent-ref %}
 
 Questions, or a channel behaving oddly? Open the in-app chat or email [raj@codecrux.dev](mailto:raj@codecrux.dev).
